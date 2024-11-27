@@ -1,15 +1,23 @@
 body {
 	display: flex;
+	flex-direction: column;
 	min-height: 100dvh;
 	font-size: 16px;
 	background-color: var(--secondary);
 	color: var(--darker);
 	font-size: 18px;
+
+	@media screen and (min-width: 700px) {
+			font-size: 16px;
+		flex-direction: row;
+	}
 }
 
 body > aside {
 	flex-basis: 0;
-	flex-grow: 1;
+	@media screen and (min-width: 700px) {
+		flex-grow: 1;
+	}
 }
 
 body > main {
@@ -20,7 +28,14 @@ body > main {
 }
 
 main > * + section,
-main > section:first-child  {
-	margin-top: var(--spacing-broad);
-	padding-inline: var(--spacing-broader);
+main > section:first-child {
+
+	margin-top: var(--spacing-thin);
+	padding-inline: var(--spacing-thin);
+
+	@media screen and (min-width: 700px) {
+		margin-top: var(--spacing-broad);
+		padding-inline: var(--spacing-broader);
+	}
+
 }
