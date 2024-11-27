@@ -1,0 +1,26 @@
+body {
+	display: flex;
+	min-height: 100dvh;
+	font-size: 16px;
+	background-color: var(--secondary);
+	color: var(--darker);
+	font-size: 18px;
+}
+
+body > aside {
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+body > main {
+	flex-basis: 0;
+	flex-grow: 6;
+
+	max-width: 1200px;
+}
+
+main > * + section,
+main > section:first-child  {
+	margin-top: var(--spacing-broad);
+	padding-inline: var(--spacing-broader);
+}

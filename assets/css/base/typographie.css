@@ -1,0 +1,14 @@
+h1{
+	font-size: var(--font-tallest);
+	font-family: var(--font-accent);
+}
+
+h2{
+	font-size: var(--font-taller);
+	font-family: var(--font-accent);
+}
+
+p{
+	font-size: var(--font-current);
+	font-family: var(--font-regular);
+}
