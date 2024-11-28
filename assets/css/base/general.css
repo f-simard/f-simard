@@ -41,7 +41,7 @@ body > main {
 	max-width: 1200px;
 }
 
-main > * + section,
+main > * + :is(section, div),
 main > section:first-child {
 	margin-top: var(--spacing-thin);
 	padding-inline: var(--spacing-thin);
@@ -52,7 +52,7 @@ main > section:first-child {
 	}
 }
 
-main > section:last-child {
+main > :is(section, div):last-child {
 	margin-bottom: var(--spacing-thin);
 
 	@media screen and (min-width: 768px) {

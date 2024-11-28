@@ -7,21 +7,21 @@
 	margin-top: var(--spacing-thinner);
 }
 
-.content-list > * + * {
+.content-list > * + :is(p, ul) {
 	margin-inline: var(--spacing-thinner);
 	margin-top: var(--spacing-thinnest);
 }
 
 .content-list ul {
-	column-count: 2
+	column-count: 2;
 }
 
 .content-list .tickless {
 	list-style-type: none;
 
-	li{
-			margin-left: 0;
-	};
+	li {
+		margin-left: 0;
+	}
 }
 
 .content-list li {
