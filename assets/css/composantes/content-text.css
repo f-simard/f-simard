@@ -1,0 +1,22 @@
+.content-text {
+	max-width: 80ch;
+}
+
+.content-text > * + :is(.button, p:first-of-type) {
+	margin-top: var(--spacing-thinner);
+}
+
+.content-text > * + p {
+	margin-inline: var(--spacing-thinner);
+	margin-top: var(--spacing-thinnest);
+}
+
+.content-text__title {
+	border-bottom: 0.25rem solid var(--accent);
+	padding-bottom: var(--spacing-thinner);
+}
+
+.content-text span {
+	font-size: var(--font-short);
+	font-style: italic;
+}
