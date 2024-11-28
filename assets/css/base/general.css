@@ -5,6 +5,7 @@ body {
 	font-size: 16px;
 	background-color: var(--secondary);
 	color: var(--darker);
+	line-height: 1.5;
 
 	@media screen and (min-width: 768px) {
 		font-size: 18px;
@@ -37,5 +38,13 @@ main > section:first-child {
 	@media screen and (min-width: 768px) {
 		margin-top: var(--spacing-broad);
 		padding-inline: var(--spacing-broader);
+	}
+}
+
+main > section:last-child {
+	margin-bottom: var(--spacing-thin);
+
+	@media screen and (min-width: 768px) {
+		margin-bottom: var(--spacing-thin);
 	}
 }

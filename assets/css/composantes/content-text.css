@@ -6,9 +6,13 @@
 	margin-top: var(--spacing-thinner);
 }
 
-.content-text > * + p {
+.content-text > * + * {
 	margin-inline: var(--spacing-thinner);
 	margin-top: var(--spacing-thinnest);
+}
+
+.content-text li {
+	margin-inline: var(--spacing-thinner);
 }
 
 .content-text__title {
@@ -16,7 +20,11 @@
 	padding-bottom: var(--spacing-thinner);
 }
 
-.content-text span {
+.content-text .small-italic {
 	font-size: var(--font-short);
 	font-style: italic;
+}
+
+.content-text .underline {
+	border-bottom: 2px solid var(--accent);
 }

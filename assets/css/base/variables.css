@@ -7,7 +7,7 @@
 		--secondary: #EBF1E4;
 		--accent: #3C908D;
 		--contrast: #EE6055;
-		
+
 		--dark:  #4A4A48;
 		--darker: #151514;
 		--light: #f6fff8;
@@ -66,19 +66,6 @@
 		--font-huger:      3.052rem;
 		--font-hugest:     3.815rem;
 		--font-giant:      120px;
-
-	/*========================= */
-	/* = LINE-HEIGHT */
-	/*========================= */
-		--line-height-perfect:      1em;
-		--line-height-compressed:   1.0em;
-		--line-height-tightest:     1.26875em;
-		--line-height-tighter:      1.62875em;
-		--line-height-tight:        1.74285em;
-		--line-height-normal:       2.375em;
-		--line-height-loose:        3.6em;
-		--line-height-looser:       4.2em;
-		--line-height-loosest:      5.0em;
 
 	/*============================ */
 	/* = LETTER-SPACING */

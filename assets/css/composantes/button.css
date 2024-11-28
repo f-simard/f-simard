@@ -1,0 +1,20 @@
+.button {
+	display: block;
+	width: max-content;
+	padding-block: var(--spacing-micro);
+	padding-inline: var(--spacing-thinnest);
+	border: 2px solid var(--accent);
+	background-color: var(--accent);
+	color: var(--darker);
+	border-radius: var(--radius-sharp);
+
+	font-family: var(--font-accent);
+
+	transition-property: background-color;
+	transition-duration: var(--duration-faster);
+	transition-timing-function: var(--ease-in-out);
+}
+
+.button:hover{
+	background-color: var(--primaire);
+}
