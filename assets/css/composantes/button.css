@@ -24,3 +24,13 @@
 	padding-block: var(--spacing-nano);
 	padding-inline: var(--spacing-micro);
 }
+
+.button_outline{
+	background-color: var(--secondary);
+	color: var(--accent);
+}	
+
+.button_outline:hover{
+	background-color: var(--accent);
+	color: var(--secondary);
+}	
