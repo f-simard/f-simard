@@ -16,6 +16,14 @@
 	column-count: 2
 }
 
+.content-list .tickless {
+	list-style-type: none;
+
+	li{
+			margin-left: 0;
+	};
+}
+
 .content-list li {
 	margin-left: var(--spacing-thinner);
 }

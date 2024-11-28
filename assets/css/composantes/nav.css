@@ -10,12 +10,12 @@
 
 	cursor: pointer;
 
-	@media (min-width: 768px) {
+	@media (min-width: 769px) {
 		display: none;
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
 	[id="nav-button"]:not(:checked) + .nav {
 		opacity: 0;
 		pointer-events: none;
@@ -42,7 +42,7 @@
 	transition-property: opacity;
 	transition-duration: 200ms;
 
-	@media (min-width: 768px) {
+	@media (min-width: 769px) {
 		position: sticky;
 		padding: var(--spacing-broad);
 		margin-inline: auto;
