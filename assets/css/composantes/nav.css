@@ -43,9 +43,9 @@
 	transition-duration: 200ms;
 
 	@media (min-width: 768px) {
-		inset: 0;
 		position: sticky;
 		padding: var(--spacing-broad);
+		margin-inline: auto;
 	}
 }
 
