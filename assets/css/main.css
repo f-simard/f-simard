@@ -4,7 +4,9 @@
 @import url('base/reset.css');
 @import url('base/general.css');
 @import url('base/typographie.css');
+@import url('base/prototype.css');
 
-@import url('composantes/menu.css');
+@import url('composantes/nav.css');
+@import url('composantes/button.css');
 @import url('composantes/content-text.css');
 @import url('composantes/announcement.css');
