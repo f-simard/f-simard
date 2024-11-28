@@ -3,7 +3,7 @@
 	max-width: 100ch;
 }
 
-.content-list > * + article {
+.content-list > * + :is(article, div) {
 	margin-top: var(--spacing-thinner);
 }
 
