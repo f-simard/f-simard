@@ -1,0 +1,12 @@
+.grid{
+	display: grid;
+}
+
+.grid_m{
+	gap:var(--spacing-thinner);
+	grid-template-columns: repeat(auto-fit, minmax(22ch, 1fr));
+
+	> * {
+		box-sizing: border-box;
+	}
+}

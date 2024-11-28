@@ -1,0 +1,21 @@
+.content-list {
+	min-width: 30ch;
+	max-width: 100ch;
+}
+
+.content-list > * + article {
+	margin-top: var(--spacing-thinner);
+}
+
+.content-list > * + * {
+	margin-inline: var(--spacing-thinner);
+	margin-top: var(--spacing-thinnest);
+}
+
+.content-list ul {
+	column-count: 2
+}
+
+.content-list li {
+	margin-left: var(--spacing-thinner);
+}
