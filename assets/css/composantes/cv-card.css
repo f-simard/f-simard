@@ -1,0 +1,20 @@
+.cv-card > div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.cv-card__school {
+	font-size: var(--font-short);
+	font-style: italic;
+}
+
+.cv-card__role {
+	font-size: var(--font-short);
+	font-style: italic;
+}
+
+.cv-card li {
+	margin-inline: var(--spacing-thinner);
+	font-size: var(--font-short);
+}

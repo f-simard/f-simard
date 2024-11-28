@@ -1,5 +1,6 @@
 .content-text {
-	max-width: 80ch;
+	min-width: 30ch;
+	max-width: 100ch;
 }
 
 .content-text > * + :is(.button, p:first-of-type) {
