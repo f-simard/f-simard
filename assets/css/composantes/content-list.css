@@ -12,6 +12,10 @@
 	margin-top: var(--spacing-thinnest);
 }
 
+.content-list ul {
+	column-count: 2
+}
+
 .content-list li {
 	margin-left: var(--spacing-thinner);
 }

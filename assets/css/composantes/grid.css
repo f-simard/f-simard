@@ -2,7 +2,11 @@
 	display: grid;
 }
 
-.grid_3{
+.grid_m{
 	gap:var(--spacing-thinner);
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(auto-fit, minmax(22ch, 1fr));
+
+	> * {
+		box-sizing: border-box;
+	}
 }

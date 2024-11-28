@@ -3,6 +3,10 @@
 	max-width: 100ch;
 }
 
+.content-text p {
+hanging-punctuation: none;
+}
+
 .content-text > * + :is(.button, p:first-of-type) {
 	margin-top: var(--spacing-thinner);
 }
