@@ -34,7 +34,7 @@
 
 .announcement{
 	padding-block: var(--spacing-thinner);
-	padding-inline: var(--spacing-thin);
+	padding-inline: var(--spacing-broad);
 	background-color: var(--contrast);
 }
 
