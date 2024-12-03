@@ -1,0 +1,22 @@
+.tickless {
+	list-style-type: none;
+
+	li {
+		margin-left: 0;
+	}
+}
+
+.underline {
+	border-bottom: 2px solid var(--accent);
+}
+
+.small-italic {
+	font-size: var(--font-short);
+	font-style: italic;
+}
+
+.typo-accent{
+	color: var(--contrast-dark);
+	font-weight: 600;
+}
+

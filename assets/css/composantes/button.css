@@ -27,7 +27,7 @@
 
 .button_outline-darker {
 	border-color: var(--darker);
-	background-color: var(--secondary);
+	background-color: var(--light);
 	color: var(--darker);
 }
 

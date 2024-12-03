@@ -18,12 +18,3 @@ hanging-punctuation: none;
 	border-bottom: 0.25rem solid var(--darker);
 	padding-bottom: var(--spacing-thinner);
 }
-
-.content-text .small-italic {
-	font-size: var(--font-short);
-	font-style: italic;
-}
-
-.content-text .underline {
-	border-bottom: 2px solid var(--accent);
-}

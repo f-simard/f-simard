@@ -6,7 +6,7 @@ body {
 
 	min-height: 100dvh;
 	font-size: 16px;
-	background-color: var(--secondary);
+	background-color: var(--light);
 	color: var(--darker);
 	line-height: 1.5;
 
@@ -46,11 +46,9 @@ body > main {
 main > * + :is(section, div),
 main > section:first-child {
 	margin-top: var(--spacing-thin);
-	padding-inline: var(--spacing-thin);
 
 	@media screen and (min-width: 768px) {
 		margin-top: var(--spacing-broad);
-		padding-inline: var(--spacing-broader);
 
 	min-width: 30ch;
 	max-width: 90ch;

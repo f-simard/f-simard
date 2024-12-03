@@ -6,7 +6,7 @@
 	padding-left: var(--spacing-thin);
 	appearance: none;
 
-	color: var(--secondary);
+	color: var(--light);
 
 	cursor: pointer;
 
@@ -33,7 +33,7 @@
 
 .nav {
 	background-color: var(--dark);
-	color: var(--secondary);
+	color: var(--light);
 	padding: var(--spacing-thin);
 
 	position: fixed;
@@ -63,7 +63,7 @@
 
 .nav > a {
 	font-family: var(--font-accent);
-	color: var(--secondary);
+	color: var(--light);
 }
 
 .nav__link-zone {
@@ -82,7 +82,7 @@
 	height: 100%;
 
 	path {
-		fill: var(--secondary);
+		fill: var(--light);
 
 		transition-property: fill;
 		transition-duration: var(--duration-faster);

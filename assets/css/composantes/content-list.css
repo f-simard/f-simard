@@ -1,27 +1,13 @@
-.content-list {
-	min-width: 30ch;
-	max-width: 100ch;
-}
-
 .content-list > * + :is(article, div) {
 	margin-top: var(--spacing-thinner);
 }
 
 .content-list > * + :is(p, ul) {
-	margin-inline: var(--spacing-thinner);
 	margin-top: var(--spacing-thinnest);
 }
 
 .content-list ul {
 	column-count: 2;
-}
-
-.content-list .tickless {
-	list-style-type: none;
-
-	li {
-		margin-left: 0;
-	}
 }
 
 .content-list li {
