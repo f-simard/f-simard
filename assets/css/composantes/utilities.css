@@ -20,3 +20,7 @@
 	font-weight: 600;
 }
 
+.typo-medium {
+	font-size: var(--font-tall);
+}
+
