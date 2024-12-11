@@ -50,7 +50,6 @@
 	display: inline-block;
 	font-size: var(--font-mini);
 	margin-left: var(--spacing-thinner);
-	color: var(--accent);
 
 	@media screen and (min-width:768px) {
 			display: none;
