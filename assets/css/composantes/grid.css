@@ -10,3 +10,25 @@
 		box-sizing: border-box;
 	}
 }
+
+.grid_2{
+	gap:var(--spacing-thinner);
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-self: center;
+
+	> * {
+		box-sizing: border-box;
+	}
+}
+
+.grid_4{
+	gap:var(--spacing-thinner);
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+
+	> *:not(web-logo) {
+		box-sizing: border-box;
+		align-self: center;
+		justify-self: center;
+	}
+}
