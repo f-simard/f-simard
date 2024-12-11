@@ -41,7 +41,9 @@ body > main {
 	flex-basis: 0;
 	flex-grow: 6;
 
-	padding-inline: var(--spacing-thin);
+	> :not(header){
+		padding-inline:  var(--spacing-thin);
+	}
 }
 
 main > * + :is(section, div),
