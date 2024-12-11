@@ -24,3 +24,11 @@
 	font-size: var(--font-tall);
 }
 
+.bg-dark{
+	background-color: var(--dark);
+}
+
+.padding-s{
+	padding: var(--spacing-micro);
+}
+

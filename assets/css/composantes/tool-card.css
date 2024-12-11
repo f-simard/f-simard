@@ -11,6 +11,7 @@
 
 .tool-card > picture {
 	display: block;
+	box-sizing: border-box;
 
 	flex-basis: 10ch;
 	min-width: 10ch;
