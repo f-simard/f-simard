@@ -1,4 +1,7 @@
 .cc__item {
 	margin-top: var(--spacing-thinner);
-	max-width: 20ch;
+}
+
+.cc__item:has(picture){
+	max-width: 22ch;
 }
