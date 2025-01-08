@@ -1,0 +1,4 @@
+.cc__item {
+	margin-top: var(--spacing-thinner);
+	max-width: 20ch;
+}
