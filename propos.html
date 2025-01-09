@@ -2,22 +2,23 @@
 <html lang="fr">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="author" content="Filippa Simard" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Filippa Simard">
 	<meta name="description"
-		content="Description de mon parcours jusqu'à présent, mes objectifs, mes aspirations et inspirations, mes visions" />
+		content="Description de mon parcours jusqu'à présent, mes objectifs, mes aspirations et inspirations, mes visions">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<title>Biographie</title>
 </head>
 
 <body>
 	<aside>
-		<input type="checkbox" id="nav-button">
+		<input type="checkbox" id="nav-button" aria-label="case pour activer menu en mobile">
 		<nav class="nav">
 			<a href="/f-simard">Accueil</a>
 			<a href="/f-simard/propos.html">À propos</a>
 			<a href="/f-simard/outils.html">Boîte à outils</a>
+			<a href="/f-simard/catalogue.html">Catalogue de composantes</a>
 			<div class="nav__link-zone">
 				<a href="https://www.linkedin.com/in/filippa-simard-2a4953a5/" target="_blank">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-label="logo LinkedIn"
@@ -46,7 +47,7 @@
 		</section>
 		<section class="content-text">
 			<header class="content-text__title">
-				<h3>Le récit de Filippa</h3>
+				<h2>Le récit de Filippa</h2>
 			</header>
 			<p>Je suis de nature curieuse et stimulée par les environnements dynamiques qui me permettent de relever de
 				nouveaux défis et d'enrichir mes connaissances. Je suis organisée, déterminée, autonome et
@@ -69,8 +70,10 @@
 				de simplicité lorsqu'on consulte
 				un site web et l'envers de la médaille, soit complexité de la conception, développement et maintenance
 				du site.</p>
-			<p>La partie conception m'a donné une appréciation d'autant plus grande pour le design. Mais c'est la
-				programmation qui a créé un déclic intellectuel. Elle est venue combler mon désir de comprendre de ce
+			<p>La partie conception m'a donné une appréciation d'autant plus grande pour le design. Mais <span
+					class="typo-accent">c'est la
+					programmation qui a créé un déclic intellectuel</span>. Elle est venue combler mon désir de
+				comprendre de ce
 				que je fais et mon penchant pour la résolution de problème. Je fais souvent le parallèle suivant: je
 				savais bien conduire (e.g. j'étais compétente dans mes rôles) mais maintenant, j'ai les outils pour
 				réaliser ce qu'il se passe sous le capot.</p>
@@ -112,6 +115,8 @@
 						<picture>
 							<img class="w-12" src="https://laravel.com/img/logomark.min.svg" alt="Laravel" width="50"
 								height="52">
+						</picture>
+						<picture>
 							<img class="ml-5 sm:block" src="https://laravel.com/img/logotype.min.svg" alt="Laravel"
 								width="114" height="29">
 						</picture>
@@ -135,7 +140,7 @@
 				</section>
 				<section>
 					<h4>Outils de développement et travail</h4>
-					<div class="grid grid_2">
+					<div class="grid grid_fix2">
 						<picture><img
 								src="https://wac-cdn.atlassian.com/dam/jcr:c942540c-53ae-4357-bffa-ed37739d71b0/bitbucket-atlassian-logo.svg?cdnVersion=2465"
 								loading="lazy" alt="Logo bitbucket"></picture>
@@ -149,7 +154,8 @@
 							</path>
 						</svg>
 						<p>
-							<svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32" aria-label="Logo github">
+							<svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32"
+								aria-label="Logo github">
 								<title>Logo Github</title>
 								<path
 									d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z">
@@ -157,7 +163,7 @@
 							</svg>
 							<span>Github</span>
 						</p>
-						
+
 						<svg fill="none" height="32" viewBox="0 0 77 32" focusable="false" aria-hidden="true"
 							xmlns="http://www.w3.org/2000/svg" aria-label="Logo Jira">
 							<title>Logo Jira</title>
@@ -171,7 +177,7 @@
 						<picture>
 							<img src="https://voyager.postman.com/logo/postman-logo-orange.svg" alt="logo postman">
 						</picture>
-						<p><svg id="image-2" alt="Microsoft 365 Logo" width="32" height="32" viewBox="0 0 48 48"
+						<p><svg id="image-2" width="32" height="32" viewBox="0 0 48 48"
 								fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
 								aria-label="Microsoft 365 Logo">
 								<path
@@ -207,7 +213,7 @@
 									</radialGradient>
 									<linearGradient id="paint1_linear_2994_8373" x1="17.5119" y1="37.8685" x2="12.7513"
 										y2="29.6347" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#114A8B"></stop>
+										<stop offset="0.0584996" stop-color="#114A8B"></stop>
 										<stop offset="1" stop-color="#0078D4" stop-opacity="0"></stop>
 									</linearGradient>
 									<radialGradient id="paint2_radial_2994_8373" cx="0" cy="0" r="1"
@@ -218,7 +224,7 @@
 									</radialGradient>
 									<linearGradient id="paint3_linear_2994_8373" x1="40.3566" y1="25.3768" x2="35.2552"
 										y2="32.6916" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#493474"></stop>
+										<stop offset="0.0584996" stop-color="#493474"></stop>
 										<stop offset="1" stop-color="#8C66BA" stop-opacity="0"></stop>
 									</linearGradient>
 									<radialGradient id="paint4_radial_2994_8373" cx="0" cy="0" r="1"
@@ -229,7 +235,7 @@
 									</radialGradient>
 									<linearGradient id="paint5_linear_2994_8373" x1="16.9758" y1="3.05655" x2="24.4868"
 										y2="3.05655" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#2D3F80"></stop>
+										<stop offset="0.0584996" stop-color="#2D3F80"></stop>
 										<stop offset="1" stop-color="#436DCD" stop-opacity="0"></stop>
 									</linearGradient>
 									<radialGradient id="paint6_radial_2994_8373" cx="0" cy="0" r="1"
@@ -240,35 +246,12 @@
 									</radialGradient>
 									<linearGradient id="paint7_linear_2994_8373" x1="16.9758" y1="3.05655" x2="24.4868"
 										y2="3.05655" gradientUnits="userSpaceOnUse">
-										<stop stop-color="#2D3F80"></stop>
+										<stop offset="0.0584996" stop-color="#2D3F80"></stop>
 										<stop offset="1" stop-color="#436DCD" stop-opacity="0"></stop>
 									</linearGradient>
 								</defs>
-							</svg> <span>Microsoft 365</span></p>
+							</svg> <span>Microsoft 365</span>
 						</p>
-					</div>
-				</section>
-				<section>
-					<h4>CMS</h4>
-					<div class="grid grid_4">
-						<svg viewBox="0 0 36 42">
-							<title>Kirby CMS</title>
-							<path
-								d="M18,0 L36,10.4981014 L36,31.5018986 L18,42 L0,31.5018986 L0,10.4981014 L18,0 Z M2,11.6926791 L2,30.3073209 L18,39.6389666 L34,30.3073209 L34,11.6926791 L18,2.36103344 L2,11.6926791 Z">
-							</path>
-							<polyline
-								points="26 21 21 23.59 21 24 26 24 26 28 10 28 10 24 15 24 15 23.563 10 21 10 16 18 20.297 26 16">
-							</polyline>
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" role="img" width="36" height="36" viewBox="0 0 28 28">
-							<title>WordPress.org</title>
-							<path fill="currentColor"
-								d="M13.6052 0.923525C16.1432 0.923525 18.6137 1.67953 20.7062 3.09703C22.7447 4.47403 24.3512 6.41803 25.3097 8.68603C26.9837 12.6415 26.5382 17.164 24.1352 20.7145C22.7582 22.753 20.8142 24.3595 18.5462 25.318C14.5907 26.992 10.0682 26.5465 6.51772 24.1435C4.47922 22.7665 2.87272 20.8225 1.91422 18.5545C0.240225 14.599 0.685725 10.0765 3.08872 6.52603C4.46572 4.48753 6.40973 2.88103 8.67772 1.92253C10.2302 1.26103 11.9177 0.923525 13.6052 0.923525ZM13.6052 0.113525C6.15322 0.113525 0.105225 6.16153 0.105225 13.6135C0.105225 21.0655 6.15322 27.1135 13.6052 27.1135C21.0572 27.1135 27.1052 21.0655 27.1052 13.6135C27.1052 6.16153 21.0572 0.113525 13.6052 0.113525Z">
-							</path>
-							<path fill="currentColor"
-								d="M2.36011 13.6133C2.36011 17.9198 4.81711 21.8618 8.70511 23.7383L3.33211 9.03684C2.68411 10.4813 2.36011 12.0338 2.36011 13.6133ZM21.2061 13.0463C21.2061 11.6558 20.7066 10.6973 20.2746 9.94134C19.8426 9.18534 19.1676 8.22684 19.1676 7.30884C19.1676 6.39084 19.9506 5.31084 21.0576 5.31084H21.2061C16.6296 1.11234 9.51511 1.42284 5.31661 6.01284C4.91161 6.45834 4.53361 6.93084 4.20961 7.43034H4.93861C6.11311 7.43034 7.93561 7.28184 7.93561 7.28184C8.54311 7.24134 8.61061 8.13234 8.00311 8.21334C8.00311 8.21334 7.39561 8.28084 6.72061 8.32134L10.8111 20.5118L13.2681 13.1273L11.5131 8.32134C10.9056 8.28084 10.3386 8.21334 10.3386 8.21334C9.73111 8.17284 9.79861 7.25484 10.4061 7.28184C10.4061 7.28184 12.2691 7.43034 13.3626 7.43034C14.4561 7.43034 16.3596 7.28184 16.3596 7.28184C16.9671 7.24134 17.0346 8.13234 16.4271 8.21334C16.4271 8.21334 15.8196 8.28084 15.1446 8.32134L19.2081 20.4173L20.3691 16.7453C20.8821 15.1388 21.1926 14.0048 21.1926 13.0328L21.2061 13.0463ZM13.7946 14.5853L10.4196 24.3998C12.6876 25.0613 15.1041 25.0073 17.3316 24.2243L17.2506 24.0758L13.7946 14.5853ZM23.4741 8.21334C23.5281 8.59134 23.5551 8.98284 23.5551 9.37434C23.5551 10.5218 23.3391 11.8043 22.7046 13.3973L19.2621 23.3333C24.5271 20.2688 26.4036 13.5593 23.4741 8.21334Z">
-							</path>
-						</svg>
 					</div>
 				</section>
 				<section>
@@ -304,6 +287,29 @@
 					</div>
 				</section>
 				<section>
+					<h4>CMS</h4>
+					<div class="grid grid_4">
+						<svg viewBox="0 0 36 42">
+							<title>Kirby CMS</title>
+							<path
+								d="M18,0 L36,10.4981014 L36,31.5018986 L18,42 L0,31.5018986 L0,10.4981014 L18,0 Z M2,11.6926791 L2,30.3073209 L18,39.6389666 L34,30.3073209 L34,11.6926791 L18,2.36103344 L2,11.6926791 Z">
+							</path>
+							<polyline
+								points="26 21 21 23.59 21 24 26 24 26 28 10 28 10 24 15 24 15 23.563 10 21 10 16 18 20.297 26 16">
+							</polyline>
+						</svg>
+						<svg xmlns="http://www.w3.org/2000/svg" role="img" width="36" height="36" viewBox="0 0 28 28">
+							<title>WordPress.org</title>
+							<path fill="currentColor"
+								d="M13.6052 0.923525C16.1432 0.923525 18.6137 1.67953 20.7062 3.09703C22.7447 4.47403 24.3512 6.41803 25.3097 8.68603C26.9837 12.6415 26.5382 17.164 24.1352 20.7145C22.7582 22.753 20.8142 24.3595 18.5462 25.318C14.5907 26.992 10.0682 26.5465 6.51772 24.1435C4.47922 22.7665 2.87272 20.8225 1.91422 18.5545C0.240225 14.599 0.685725 10.0765 3.08872 6.52603C4.46572 4.48753 6.40973 2.88103 8.67772 1.92253C10.2302 1.26103 11.9177 0.923525 13.6052 0.923525ZM13.6052 0.113525C6.15322 0.113525 0.105225 6.16153 0.105225 13.6135C0.105225 21.0655 6.15322 27.1135 13.6052 27.1135C21.0572 27.1135 27.1052 21.0655 27.1052 13.6135C27.1052 6.16153 21.0572 0.113525 13.6052 0.113525Z">
+							</path>
+							<path fill="currentColor"
+								d="M2.36011 13.6133C2.36011 17.9198 4.81711 21.8618 8.70511 23.7383L3.33211 9.03684C2.68411 10.4813 2.36011 12.0338 2.36011 13.6133ZM21.2061 13.0463C21.2061 11.6558 20.7066 10.6973 20.2746 9.94134C19.8426 9.18534 19.1676 8.22684 19.1676 7.30884C19.1676 6.39084 19.9506 5.31084 21.0576 5.31084H21.2061C16.6296 1.11234 9.51511 1.42284 5.31661 6.01284C4.91161 6.45834 4.53361 6.93084 4.20961 7.43034H4.93861C6.11311 7.43034 7.93561 7.28184 7.93561 7.28184C8.54311 7.24134 8.61061 8.13234 8.00311 8.21334C8.00311 8.21334 7.39561 8.28084 6.72061 8.32134L10.8111 20.5118L13.2681 13.1273L11.5131 8.32134C10.9056 8.28084 10.3386 8.21334 10.3386 8.21334C9.73111 8.17284 9.79861 7.25484 10.4061 7.28184C10.4061 7.28184 12.2691 7.43034 13.3626 7.43034C14.4561 7.43034 16.3596 7.28184 16.3596 7.28184C16.9671 7.24134 17.0346 8.13234 16.4271 8.21334C16.4271 8.21334 15.8196 8.28084 15.1446 8.32134L19.2081 20.4173L20.3691 16.7453C20.8821 15.1388 21.1926 14.0048 21.1926 13.0328L21.2061 13.0463ZM13.7946 14.5853L10.4196 24.3998C12.6876 25.0613 15.1041 25.0073 17.3316 24.2243L17.2506 24.0758L13.7946 14.5853ZM23.4741 8.21334C23.5281 8.59134 23.5551 8.98284 23.5551 9.37434C23.5551 10.5218 23.3391 11.8043 22.7046 13.3973L19.2621 23.3333C24.5271 20.2688 26.4036 13.5593 23.4741 8.21334Z">
+							</path>
+						</svg>
+					</div>
+				</section>
+				<section>
 					<h4>Autres</h4>
 					<ul class="tickless">
 						<li>Kronos Dimension</li>
@@ -318,14 +324,14 @@
 			<header class="content-text__title">
 				<h3>Éducation</h3>
 			</header>
-			<article class="cv-card">
+			<div class="cv-card">
 				<div>
 					<p>AEC en Conception et Développement Web</p>
 					<p>En cours</p>
 				</div>
 				<p class="cv-card__school">Collège de Maisonneuve</p>
-			</article>
-			<article class="cv-card">
+			</div>
+			<div class="cv-card">
 				<div>
 					<p>Baccalauréat en génie industrielle</p>
 					<p>2014-2018</p>
@@ -334,27 +340,27 @@
 				<ul>
 					<li>Programme Co-op</li>
 				</ul>
-			</article>
+			</div>
 		</section>
 		<section class="content-list">
 			<header class="content-text__title">
 				<h3>Expériences professionnelles</h3>
 			</header>
-			<article class="cv-card">
+			<div class="cv-card">
 				<div>
 					<p><a href="https://post-scriptum.org/" class="cv-card__company">Post Scriptum &#10097;</a></p>
 					<p>En cours</p>
 				</div>
 				<p class="cv-card__role">Contract</p>
-			</article>
-			<article class=" cv-card">
+			</div>
+			<div class=" cv-card">
 				<div>
 					<p class="cv-card__company">Collège de Maisonnseuve</p>
 					<p>2024</p>
 				</div>
 				<p class="cv-card__role">Tutrice</p>
-			</article>
-			<article class="cv-card">
+			</div>
+			<div class="cv-card">
 				<div>
 					<p><a href="https://www.generixgroup.com/en/supply-chain-operations/warehouse-management-solochain"
 							class="cv-card__company">Générix &#10097;</a></p>
@@ -363,8 +369,8 @@
 				<p class="cv-card__role">Analyste en processus d'affaire senior</p>
 				<p class="cv-card__role">Lead en assurance qualité</p>
 				<p class=" cv-card__role">Analyste en assurance qualité</p>
-			</article>
-			<article class="cv-card">
+			</div>
+			<div class="cv-card">
 				<div>
 					<p><a href="https://www2.deloitte.com/ca/en/pages/consulting/solutions/clever-ant-home.html"
 							class="cv-card__company">Deloitte <span>Consultation, équipe CleverAnt &#10097;</span></a>
@@ -372,14 +378,14 @@
 					<p>2019-2020</p>
 				</div>
 				<p class="cv-card__role">Analyste en processus d'affaire senior</p>
-			</article>
-			<article class="cv-card">
+			</div>
+			<div class="cv-card">
 				<div>
 					<p class="cv-card__company">Pepsico Alimentation</p>
 					<p>2018-2019</p>
 				</div>
 				<p class="cv-card__role">Superviseure de production</p>
-			</article>
+			</div>
 		</section>
 	</main>
 </body>

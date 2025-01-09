@@ -5,10 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Filippa Simard">
-	<meta name="description"
-		content="Site personnel décrivant mes expériences passées et présentes, mes ressources préférées en développement de site web et et des articles sur mes pensées, projets, étude de cas">
+	<meta name="description" content="Catalogue de composantes">
 	<link rel="stylesheet" href="assets/css/main.css">
-	<title>Filippa Simard</title>
+	<title>Boite à outils</title>
 </head>
 
 <body>
@@ -40,40 +39,69 @@
 		</nav>
 	</aside>
 	<main>
-		<header class="announcement slide-bottom">
-			<p class="announcement__title">À venir</p>
-			<p>Composantes additionnelles, études de cas</p>
-		</header>
-		<section>
-			<h1>Filippa Simard</h1>
-			<p>Developpeuse en formation</p>
-		</section>
-		<section class="content-text ">
+		<section class="content-text">
 			<header class="content-text__title">
-				<h2>À Propos</h2>
+				<h1>Catalogue de composantes</h1>
 			</header>
-			<p class="typo-medium">Curieuse, organisée et proactive</p>
-			<p>Je me cherche actuellement un <span class="typo-accent">stage en développement web</span> pour
-				février-mars 2025. Le stage marque la complétion du AEC de Conception et
-				programmation de site web. J'ai entré ce programme afin de réorienter ma carrière vers un domaine plus
-				créatif.</p>
-			<p>Je souhaite faire partie d'une équipe <span class="typo-accent">multidisciplinaire, engagée et
-					dynamique</span>, où mes habiletés,
-				anciennes et
-				nouvelles, contribuerons à de donner vie à la vision de mes futures collègues et clients.</p>
-			<p>Mes diverses expériences en assurance qualité et implémentation de logiciel ainsi que ma nature
-				méthodique m'ont permis de
-				développer <span class="typo-accent">une approche structurée et créative face à des enjeux
-					techniques</span> tout en respectant des échéanciers et
-				budgets parfois serrés. Cela m'a aussi donné l'occasion de travailler dans des équipes
-				interdisciplinaires sous des
-				influences d'agilité et dont les objectifs étaient la satisfaction client et le développement de
-				solutions de qualité.
-				Mes différents rôles m'ont permis de mettre en pratique mes capacités d'analyse, d'apprentissage rapide,
-				de traduction
-				de besoins fonctionnels en requis techniques et vice-versa.</p>
-			<a href="/f-simard/propos.html" class="button">Me connaître d'avantage</a>
 		</section>
+		<div class="grid grid_wrap2 grid_start">
+			<article class="catalogue-card">
+				<h2>Menu deroulant</h2>
+				<p>Langagues: HTML, CSS</p>
+				<ul class="cc__item">
+					<li>Accueil</li>
+					<li>Menu</li>
+					<li class="dropdown">▼ Restaurants
+						<ul class="dropdown__content">
+							<li>Montréal</li>
+							<li>Québec</li>
+							<li>Trois-Rivière</li>
+						</ul>
+					</li>
+					<li>Réserver</li>
+				</ul>
+			</article>
+			<article class="catalogue-card">
+				<h2>Médaillon</h2>
+				<p>Langagues: HTML, CSS</p>
+				<div class="cc__item">
+					<picture class="medal">
+						<img src="assets/img/climbing.jpg" alt="indoor climbing wall">
+					</picture>
+				</div>
+			</article>
+			<article class="accordion">
+				<h2>Accordion</h2>
+				<p>Langagues: HTML, CSS</p>
+
+				<div class="cc__item">
+					<p>L'astuce est d'utiliser l'élement &lt;details&gt; et le selecteur CSS "voisin". Le contenu est
+						dans
+						un element voisi à la balise &lt;details&gt; plutôt que dans celui-ci. La hauteur de l'élément
+						voisin est modifié selon l'ouverture de la balise &lt;details&gt;. Adapté de <a
+							href="https://codepen.io/MoyCode/pen/PoQBGjL">Codepen</a>
+					</p>
+					<details>
+						<summary>Livre du moment (chevron de base)</summary>
+					</details>
+					<div class="accordion__frame">
+						<p>Women of resistance - Poems for a new feminism, edited by Danielle Barnhart & Iris Mahan</p>
+					</div>
+					<details>
+						<summary>Animer et deplacer le chevron<span class="accordion__chevron">&#10094;</span></summary>
+					</details>
+					<div class="accordion__frame">
+						<p>Le chevron peut être modifier et animé avec du CSS</p>
+					</div>
+					<details>
+						<summary>Prochain livre<span class="accordion__chevron">&#10094;</span></summary>
+					</details>
+					<div class="accordion__frame">
+						<p>101 essays that will change the way you think part Brianna West</p>
+					</div>
+				</div>
+			</article>
+		</div>
 	</main>
 </body>
 

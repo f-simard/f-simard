@@ -63,6 +63,6 @@ main > :is(section, div):last-child {
 	margin-bottom: var(--spacing-thin);
 
 	@media screen and (min-width: 768px) {
-		margin-bottom: var(--spacing-thin);
+		margin-bottom: var(--spacing-broad);
 	}
 }
