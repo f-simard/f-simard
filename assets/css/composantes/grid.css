@@ -3,7 +3,7 @@
 }
 
 .grid_m{
-	gap:var(--spacing-thinner);
+	gap:var(--spacing-thin);
 	grid-template-columns: repeat(auto-fit, minmax(22ch, 1fr));
 
 	> * {
