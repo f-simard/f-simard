@@ -5,7 +5,12 @@ ul:has(.dropdown) li {
 	border-bottom: 1px solid transparent;
 }
 ul:has(.dropdown) li {
-	padding: var(--spacing-nano);
+	padding: var(--spacing-micro);
+	font-size: clamp(var(--font-short), 1.5vw, var(--font-current));
+
+	@media screen and (min-width: 768px) {
+		padding: var(--spacing-nano);
+	}
 }
 
 ul:has(.dropdown) > li:hover,
@@ -21,7 +26,7 @@ ul:has(.dropdown) > li:hover,
 	opacity: 1;
 }
 
-.dropdown__content > li{
+.dropdown__content > li {
 	display: block;
 	width: max-content;
 }
