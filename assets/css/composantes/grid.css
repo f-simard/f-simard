@@ -22,6 +22,12 @@
 	}
 }
 
+.grid_start{
+	align-items: start;
+	justify-self: center;
+}
+
+
 .grid_4{
 	gap:var(--spacing-thinner);
 	grid-template-columns: 1fr 1fr 1fr 1fr;

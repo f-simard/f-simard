@@ -17,7 +17,7 @@
 			<a href="/f-simard">Accueil</a>
 			<a href="/f-simard/propos.html">À propos</a>
 			<a href="/f-simard/outils.html">Boîte à outils</a>
-						<a href="/f-simard/catalogue.html">Catalogue de composantes</a>
+			<a href="/f-simard/catalogue.html">Catalogue de composantes</a>
 			<div class="nav__link-zone">
 				<a href="https://www.linkedin.com/in/filippa-simard-2a4953a5/" target="_blank">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-label="logo LinkedIn"
@@ -44,7 +44,7 @@
 				<h1>Catalogue de composantes</h1>
 			</header>
 		</section>
-		<div class="grid grid_m">
+		<div class="grid grid_2 grid_start">
 			<article class="catalogue-card">
 				<h2>Menu deroulant</h2>
 				<p>Langagues: HTML, CSS</p>
@@ -70,7 +70,39 @@
 					</picture>
 				</div>
 			</article>
+			<article class="accordion">
+				<h2>Accordion</h2>
+				<p>Langagues: HTML, CSS</p>
+
+				<div class="cc__item">
+					<p>L'astuce est d'utiliser l'élement &lt;details&gt; et le selecteur CSS "voisin". Le contenu est
+						dans
+						un element voisi à la balise &lt;details&gt; plutôt que dans celui-ci. La hauteur de l'élément
+						voisin est modifié selon l'ouverture de la balise &lt;details&gt;. Adapté de <a
+							href="https://codepen.io/MoyCode/pen/PoQBGjL">Codepen</a>
+					</p>
+					<details>
+						<summary>Livre du moment (chevron de base)</summary>
+					</details>
+					<div class="accordion__frame">
+						<p>Women of resistance - Poems for a new feminism, edited by Danielle Barnhart & Iris Mahan</p>
+					</div>
+					<details>
+						<summary>Animer et deplacer le chevron<span class="accordion__chevron">&#10094;</span></summary>
+					</details>
+					<div class="accordion__frame">
+						<p>Le chevron peut être modifier et animé avec du CSS</p>
+					</div>
+					<details>
+						<summary>Prochain livre<span class="accordion__chevron">&#10094;</span></summary>
+					</details>
+					<div class="accordion__frame">
+						<p>101 essays that will change the way you think part Brianna West</p>
+					</div>
+				</div>
+			</article>
 		</div>
 	</main>
 </body>
+
 </html>
