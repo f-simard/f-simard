@@ -11,6 +11,7 @@
 
 .tool-card > picture {
 	display: block;
+	box-sizing: border-box;
 
 	flex-basis: 10ch;
 	min-width: 10ch;
@@ -49,7 +50,6 @@
 	display: inline-block;
 	font-size: var(--font-mini);
 	margin-left: var(--spacing-thinner);
-	color: var(--accent);
 
 	@media screen and (min-width:768px) {
 			display: none;

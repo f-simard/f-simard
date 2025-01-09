@@ -1,0 +1,103 @@
+/* src: https://css-tricks.com/follow-up-we-officially-have-a-css-logo/ */
+
+/*  
+  Notes:
+  - div is nested so it can adapt to the container
+  - p is nested so the <sup> can stack with the language and share box padding
+*/
+
+/* for CSS logo */
+@font-face {
+  font-family: DINish;
+  src: url(https://assets.codepen.io/2585/DINish.woff2);
+}
+
+/* for emulating JS/TS/WA logos */
+@font-face {
+  font-family: Neutraface;
+  src: url(https://assets.codepen.io/2585/Neutraface+Text+Bold.otf);
+}
+
+web-logo {
+  container-type: inline-size;
+  overflow: hidden;
+  aspect-ratio: 1;
+  
+  .box {
+    --_text: #2b2729;
+    --_surface: gray;
+
+    font-family: DINish;
+    font-variation-settings: "wdth" 75, "slnt" 0, "wght" 900;
+
+    color: var(--_text);
+    background: var(--_surface);
+
+    aspect-ratio: 1;
+    height: 100%; /* for safari */
+    font-size: 55cqi; 
+
+    display: grid;
+    place-items: end;
+
+    &.css {
+      border-radius: 0 15cqi 15cqi;
+      --_text: white;
+      
+      &.blue {
+        --_surface: #0339f8; /* shield blue */
+        --_surface: #0000EE; /* spec link blue */
+        --_surface: blue;    /* keyword blue */
+        --_surface: #005a9c; /* w3c blue */
+      }
+      
+      &.purple {
+        --_surface: rebeccapurple;
+      }
+
+      &.light {
+        --_surface: white;
+        --_text: black;
+        
+        &.outlined {
+          box-shadow: inset 0 0 0 2cqw black;
+        }
+      }
+
+      &.dark {
+        --_surface: black;
+        --_text: white;
+        
+        &.outlined {
+          box-shadow: inset 0 0 0 2cqw white;
+        }
+      }
+    }
+
+    &.ts {
+      --_surface: #5286C6;
+      --_text: white;
+      font-family: Neutraface;
+    }
+
+    &.js {
+      --_surface: #EFDE72;
+      font-family: Neutraface;
+    }
+    
+    &.html {
+      --_surface: #dc6e3c;
+      --_text: white;
+      font-size: 40cqi;
+    }
+
+    > * {
+      grid-area: 1/1;
+      line-height: 1;
+    }
+
+	p{
+		padding-right: 0.25ch;
+	}
+  }
+}

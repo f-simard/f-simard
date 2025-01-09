@@ -6,11 +6,11 @@ body {
 
 	min-height: 100dvh;
 	font-size: 16px;
-	background-color: var(--secondary);
+	background-color: var(--light);
 	color: var(--darker);
 	line-height: 1.5;
 
-	@media(min-width: 769px) {
+	@media (min-width: 769px) {
 		font-size: 18px;
 		flex-direction: row;
 	}
@@ -20,8 +20,7 @@ body > aside {
 	flex-basis: 0;
 	background-color: var(--dark);
 
-	@media(min-width: 769px) {
-
+	@media (min-width: 769px) {
 		flex-grow: 1;
 		align-self: flex-start;
 		height: 100dvh;
@@ -29,8 +28,12 @@ body > aside {
 
 		position: sticky;
 		top: 0;
-		
+
 		display: flex;
+	}
+
+	@media (min-width: 1440px) {
+		max-width: 30ch;
 	}
 }
 
@@ -38,17 +41,21 @@ body > main {
 	flex-basis: 0;
 	flex-grow: 6;
 
-	max-width: 1200px;
+	> :not(header){
+		padding-inline:  var(--spacing-thin);
+	}
 }
 
 main > * + :is(section, div),
 main > section:first-child {
 	margin-top: var(--spacing-thin);
-	padding-inline: var(--spacing-thin);
 
 	@media screen and (min-width: 768px) {
 		margin-top: var(--spacing-broad);
-		padding-inline: var(--spacing-broader);
+
+	min-width: 30ch;
+	max-width: 90ch;
+	margin-inline: auto;
 	}
 }
 

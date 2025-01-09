@@ -3,14 +3,14 @@
 	/*============================ */
 	/* = COLORS */
 	/*============================ */
-		--primary: #566246;
-		--secondary: #EBF1E4;
-		--accent: #3C908D;
+		--light: #FDFDFC;
+		/* --accent: #3C908D; */
+		--accent: #F59F99;
 		--contrast: #EE6055;
+		--contrast-dark: #95180F;
 
 		--dark:  #4A4A48;
 		--darker: #151514;
-		--light: #f6fff8;
 
 
 	/*============================ */

@@ -10,27 +10,29 @@
 
 	font-family: var(--font-accent);
 
-	transition-property: background-color;
+	transition-property: background-color,border-color;
 	transition-duration: var(--duration-faster);
 	transition-timing-function: var(--ease-in-out);
 }
 
-.button:hover{
+.button:hover {
 	background-color: var(--primaire);
 }
 
-.button_small{
+.button_small {
 	font-size: var(--font-short);
 	padding-block: var(--spacing-nano);
 	padding-inline: var(--spacing-micro);
 }
 
-.button_outline{
-	background-color: var(--secondary);
-	color: var(--accent);
-}	
+.button_outline-darker {
+	border-color: var(--darker);
+	background-color: var(--light);
+	color: var(--darker);
+}
 
-.button_outline:hover{
+.button_outline-darker:hover {
+	border-color: var(--accent);
 	background-color: var(--accent);
-	color: var(--secondary);
-}	
+	color: var(--darker);
+}

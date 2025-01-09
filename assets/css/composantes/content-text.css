@@ -1,8 +1,3 @@
-.content-text {
-	min-width: 30ch;
-	max-width: 100ch;
-}
-
 .content-text p {
 hanging-punctuation: none;
 }
@@ -12,7 +7,6 @@ hanging-punctuation: none;
 }
 
 .content-text > * + * {
-	margin-inline: var(--spacing-thinner);
 	margin-top: var(--spacing-thinnest);
 }
 
@@ -21,15 +15,6 @@ hanging-punctuation: none;
 }
 
 .content-text__title {
-	border-bottom: 0.25rem solid var(--accent);
+	border-bottom: 0.25rem solid var(--darker);
 	padding-bottom: var(--spacing-thinner);
-}
-
-.content-text .small-italic {
-	font-size: var(--font-short);
-	font-style: italic;
-}
-
-.content-text .underline {
-	border-bottom: 2px solid var(--accent);
 }
