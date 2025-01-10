@@ -7,6 +7,7 @@
 	<meta name="author" content="Filippa Simard">
 	<meta name="description" content="Catalogue de composantes">
 	<link rel="stylesheet" href="assets/css/main.css">
+	<script type="module" src="assets/js/pages/catalogue.js"></script>
 	<title>Boite à outils</title>
 </head>
 
@@ -100,6 +101,31 @@
 						<p>101 essays that will change the way you think part Brianna West</p>
 					</div>
 				</div>
+			</article>
+			<article>
+				<h2>Modale</h2>
+				<p>Langagues: HTML, CSS, JS Vanille</p>
+				<div class="cc__item button__group js-launchToast">
+					<button class="button button_outline-darker" data-demo="fullScreenAuto">Lancer modale plein ecran avec fermeture automatique</button>
+					<button class="button button_outline-darker" data-demo="fullScreenMan">Lancer modale plein ecran avec fermeture manuelle</button>
+					<button class="button button_outline-darker" data-demo="toastTopInOutAuto">Lancer modale de type bannière en haut de page</button>
+					<button class="button button_outline-darker" data-demo="toastBottomRightAuto">Lancer modale au coin droit de la page</button>
+				</div>
+				<template id="template-toastAuto">
+					<div class="toast">
+						<div class="toast__content">
+							<p class="toast__message">{{message}}</p>
+						</div>
+					</div>
+				</template>
+				<template id="template-toastMan">
+					<div class="toast">
+						<div class="toast__content">
+							<p class="toast__message">{{message}}</p>
+							<button class="button button_out-darker_bg-transparent">Fermer</button>
+						</div>
+					</div>
+				</template>
 			</article>
 		</div>
 	</main>
