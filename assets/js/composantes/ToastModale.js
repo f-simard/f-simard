@@ -48,7 +48,7 @@ class ToastModale {
 		this.#elementHTML.dataset.demo = "fullScreenManClose";
 		setTimeout(() => {
 			this.#elementHTML.remove();
-		}, 1525);
+		}, 1275);
 	}
 }
 

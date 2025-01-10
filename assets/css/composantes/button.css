@@ -37,6 +37,18 @@
 	color: var(--darker);
 }
 
+.button_out-darker_bg-transparent{
+	border-color: var(--darker);
+	background-color: var(--transparent);
+	color: var(--darker);
+}
+
+.button_out-darker_bg-transparent:hover {
+	border-color: var(--contrast-dark);
+	background-color: var(--contrast-dark);
+	color: var(--light);
+}
+
 .button__group{
 	display: flex;
 	flex-direction: column;
