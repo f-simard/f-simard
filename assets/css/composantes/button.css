@@ -36,3 +36,14 @@
 	background-color: var(--accent);
 	color: var(--darker);
 }
+
+.button__group{
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-thinner);
+	align-items: stretch;
+
+	> .button {
+		width: initial;
+	}
+}

@@ -4,7 +4,6 @@
 @import url('base/reset.css');
 @import url('base/general.css');
 @import url('base/typographie.css');
-@import url('base/prototype.css');
 
 @import url('composantes/nav.css');
 @import url('composantes/grid.css');
@@ -19,5 +18,6 @@
 @import url('composantes/catalogue-card.css');
 @import url('composantes/dropdown.css');
 @import url('composantes/accordion.css');
+@import url('composantes/toast.css');
 @import url('composantes/web-logo.css');
 @import url('composantes/utilities.css');
