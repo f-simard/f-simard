@@ -15,7 +15,7 @@ main {
 }
 
 body > header {
-	background-color: var(--dark);
+	background-color: var(--darker);
 }
 
 .ctn {
