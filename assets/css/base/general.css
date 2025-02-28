@@ -9,20 +9,18 @@ body {
 }
 
 main {
-
-	padding-inline: var(--spacing-thin);
 	p + p {
 		margin-top: 0.5rem;
 	}
 }
 
 body > header {
-	background-color: var(--dark);
+	background-color: var(--darker);
 }
 
-main > * + :is(section, div),
-main > section:first-child {
+.ctn {
 	margin-top: var(--spacing-thin);
+	padding-inline: 16px;
 
 	@media screen and (min-width: 768px) {
 		margin-top: var(--spacing-broad);
