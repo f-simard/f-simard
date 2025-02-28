@@ -28,7 +28,11 @@
 	background-color: var(--darker);
 	color: var(--light);
 
+	display: flex;
+	align-items: center;
+
 	.wave {
+		overflow: auto;
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -42,10 +46,9 @@
 		z-index: 15;
 		opacity: 0.9;
 		animation-delay: 0s;
-		bottom: 0;
 	}
 	.wave2 {
-		animation: animate2 15s linear infinite ;
+		animation: animate2 15s linear infinite;
 		z-index: 10;
 		opacity: 0.7;
 		animation-delay: -5s;
@@ -68,6 +71,10 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+
+	&.ctn {
+		margin-top: 0;
+	}
 
 	h1 {
 		font: var(--uber);
