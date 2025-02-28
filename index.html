@@ -11,70 +11,102 @@
 	<title>Filippa Simard</title>
 </head>
 
-<body>
-	<aside>
+<body style="--header: 20px">
+	<header>
 		<input type="checkbox" id="nav-button" aria-label="case pour activer menu en mobile">
 		<nav class="nav">
 			<a href="/f-simard">Accueil</a>
-			<a href="/f-simard/propos.html">À propos</a>
-			<a href="/f-simard/outils.html">Boîte à outils</a>
-			<a href="/f-simard/catalogue.html">Catalogue de composantes</a>
+			<!-- <a href="/f-simard/propos.html">À propos</a> -->
 			<div class="nav__link-zone">
 				<a href="https://www.linkedin.com/in/filippa-simard-2a4953a5/" target="_blank">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-label="logo LinkedIn"
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-label="logo LinkedIn"
 						class="nav__link"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
 						<title>Logo LinkedIn</title>
-						<path
-							d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+						<use xlink:href="#linkedin" />
 					</svg>
 				</a>
 				<a href="https://github.com/f-simard" target="_blank">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" aria-label="Logo Github"
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" aria-label="Logo Github"
 						class="nav__link"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
 						<title>Logo GitHub</title>
-						<path
-							d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+						<use xlink:href="#github" />
 					</svg>
 				</a>
 			</div>
 		</nav>
-	</aside>
-	<main>
-		<header class="announcement slide-bottom">
-			<p class="announcement__title">À venir</p>
-			<p>Composantes additionnelles, études de cas</p>
-		</header>
-		<section>
-			<h1>Filippa Simard</h1>
-			<p>Developpeuse en formation</p>
+	</header>
+	<main id="home">
+		<section class="introduction">
+			<h1>Filippa Simard, <span>Développeuse web</span></h1>
+			<div class="ctn">
+				<div>
+					<p>
+						Développeuse front-end passionnée par la création numérique, je souhaite à transformer des concepts de design en sites web réactifs et attrayants.
+					</p>
+					<p>Je cherche à canaliser mon expertise technique et mon énergie créative dans un <span
+							class="typo-accent">
+							rôle de
+							développement
+							front-end
+						</span>où je pourrai contribuer à des expériences numériques innovantes au sein d'une agence web
+						<span class="typo-accent">engagée, engageante
+							dynamique</span>
+					</p>
+				</div>
+				<div class="qualities">
+					<span>Curieuse</span>
+					<span>Organisée</span>
+					<span>Proactive</span>
+				</div>
+			</div>
 		</section>
-		<section class="content-text ">
-			<header class="content-text__title">
-				<h2>À Propos</h2>
-			</header>
-			<p class="typo-medium">Curieuse, organisée et proactive</p>
-			<p>Je me cherche actuellement un <span class="typo-accent">stage en développement web</span> pour
-				février-mars 2025. Le stage marque la complétion du AEC de Conception et
-				programmation de site web. J'ai entré ce programme afin de réorienter ma carrière vers un domaine plus
-				créatif.</p>
-			<p>Je souhaite faire partie d'une équipe <span class="typo-accent">multidisciplinaire, engagée et
-					dynamique</span>, où mes habiletés,
-				anciennes et
-				nouvelles, contribuerons à de donner vie à la vision de mes futures collègues et clients.</p>
-			<p>Mes diverses expériences en assurance qualité et implémentation de logiciel ainsi que ma nature
-				méthodique m'ont permis de
-				développer <span class="typo-accent">une approche structurée et créative face à des enjeux
-					techniques</span> tout en respectant des échéanciers et
-				budgets parfois serrés. Cela m'a aussi donné l'occasion de travailler dans des équipes
-				interdisciplinaires sous des
-				influences d'agilité et dont les objectifs étaient la satisfaction client et le développement de
-				solutions de qualité.
-				Mes différents rôles m'ont permis de mettre en pratique mes capacités d'analyse, d'apprentissage rapide,
-				de traduction
-				de besoins fonctionnels en requis techniques et vice-versa.</p>
-			<a href="/f-simard/propos.html" class="button">Me connaître d'avantage</a>
+		<section class="contributions">
+			<h2>Contributions</h2>
+			<p>J'ai eu l'opportunité de collaborer sur le développement de ces sites au travers de mon stage et de
+				contrat.</p>
+			<div class="ctn">
+				<article>
+					<span class="year">2025</span>
+					<span class="source">stage</span>
+					<h3>RLQ</h3>
+					<svg viewBox="0 0 24 24">
+						<use xlink:href="#construction" />
+					</svg>
+				</article>
+				<article>
+					<span class="year">2024</span>
+					<span class="source">contrat</span>
+					<h3>Revue Post-Scriptum</h3>
+					<a href="https://post-scriptum.org/">
+						<svg viewBox="0 0 16 16">
+							<use xlink:href="#external-link" />
+						</svg>
+					</a>
+				</article>
+			</div>
 		</section>
 	</main>
+	<div id="globals">
+		<svg style="display: none;">
+			<defs>
+				<path id="linkedin"
+					d="M41.6 3.2H6.4C4.8 3.2 3.2 4.8 3.2 6.4v35.2c0 1.6 1.6 3.2 3.2 3.2h35.2c1.6 0 3.2-1.6 3.2-3.2V6.4c0-1.6-1.6-3.2-3.2-3.2zM13.5 41.6H6.9V20.2h6.6v21.4zm-3.3-24.3c-2.1 0-3.9-1.7-3.9-3.9s1.7-3.9 3.9-3.9 3.9 1.7 3.9 3.9-1.7 3.9-3.9 3.9zm28.2 24.3h-6.6V31.2c0-2.5-.1-5.7-3.5-5.7-3.5 0-4 2.7-4 5.5v10.6h-6.6V20.2h6.4v2.9h.1c.9-1.7 3.1-3.5 6.3-3.5 6.7 0 8 4.4 8 10.2v12.8z" />
+				<path id="github" fill-rule="evenodd" clip-rule="evenodd"
+					d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" />
+				<path id="arrow-forward"
+					d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+				</path>
+				<polygon id="external-link" fill-rule="evenodd"
+					points="9.586 5 5 5 5 3 13 3 13 11 11 11 11 6.414 4.707 12.707 3.293 11.293" />
+				<symbol id="construction" viewBox="0 0 24 24">
+					<path
+						d="M9.738,10.3a.516.516,0,0,0-.707,0L.768,18.56a2.483,2.483,0,0,0-.733,1.768,2.564,2.564,0,0,0,2.5,2.5A2.481,2.481,0,0,0,4.3,22.1l8.263-8.262a.5.5,0,0,0,0-.707Z" />
+					<path
+						d="M23.524,9.236l-1.06-1.061h0a1,1,0,0,0-1.413,0,1.022,1.022,0,0,1-1.414,0A1,1,0,0,1,19.413,7.1a1.5,1.5,0,0,0-.335-1.607C17.646,4.056,17.07,3.48,16.785,3.249l.007-.006A7.746,7.746,0,0,0,6.761,2.8a1,1,0,0,0-.348,1.138A1.013,1.013,0,0,0,7.4,4.6,5.014,5.014,0,0,1,11.15,6.055c.518.518.78.917.78,1.186a.41.41,0,0,1-.152.308L10.8,8.53a.5.5,0,0,0,0,.707l2.829,2.828a.5.5,0,0,0,.707,0L15.393,11a1.022,1.022,0,0,1,1.413,0,1,1,0,0,1,0,1.414,1,1,0,0,0,0,1.415l1.061,1.061a1.5,1.5,0,0,0,2.121,0l3.535-3.537a1.5,1.5,0,0,0,0-2.121Z" />
+				</symbol>
+			</defs>
+		</svg>
+	</div>
 </body>
 
 </html>
