@@ -1,49 +1,23 @@
 body {
 	position: relative;
 
-	display: flex;
-	flex-direction: column;
-
 	min-height: 100dvh;
-	font-size: 16px;
+	font: var(--regular);
 	background-color: var(--light);
 	color: var(--darker);
 	line-height: 1.5;
+}
 
-	@media (min-width: 769px) {
-		font-size: 18px;
-		flex-direction: row;
+main {
+
+	padding-inline: var(--spacing-thin);
+	p + p {
+		margin-top: 0.5rem;
 	}
 }
 
-body > aside {
-	flex-basis: 0;
+body > header {
 	background-color: var(--dark);
-
-	@media (min-width: 769px) {
-		flex-grow: 1;
-		align-self: flex-start;
-		height: 100dvh;
-		box-sizing: border-box;
-
-		position: sticky;
-		top: 0;
-
-		display: flex;
-	}
-
-	@media (min-width: 1440px) {
-		max-width: 30ch;
-	}
-}
-
-body > main {
-	flex-basis: 0;
-	flex-grow: 6;
-
-	> :not(header){
-		padding-inline:  var(--spacing-thin);
-	}
 }
 
 main > * + :is(section, div),
@@ -53,9 +27,9 @@ main > section:first-child {
 	@media screen and (min-width: 768px) {
 		margin-top: var(--spacing-broad);
 
-	min-width: 30ch;
-	max-width: 90ch;
-	margin-inline: auto;
+		min-width: 30ch;
+		max-width: 90ch;
+		margin-inline: auto;
 	}
 }
 

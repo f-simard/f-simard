@@ -3,21 +3,10 @@
 @import url('base/variables.css');
 @import url('base/reset.css');
 @import url('base/general.css');
-@import url('base/typographie.css');
 
 @import url('composantes/nav.css');
-@import url('composantes/grid.css');
 @import url('composantes/button.css');
-@import url('composantes/content-text.css');
-@import url('composantes/content-list.css');
-@import url('composantes/announcement.css');
-@import url('composantes/cv-card.css');
-@import url('composantes/tool-card.css');
-@import url('composantes/medal.css');
-@import url('composantes/tool-card.css');
-@import url('composantes/catalogue-card.css');
-@import url('composantes/dropdown.css');
-@import url('composantes/accordion.css');
-@import url('composantes/toast.css');
-@import url('composantes/web-logo.css');
 @import url('composantes/utilities.css');
+
+/*pages*/
+@import url('pages/home.css');

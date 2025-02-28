@@ -1,163 +1,114 @@
-
 :root {
 	/*============================ */
 	/* = COLORS */
 	/*============================ */
-		--light: #FDFDFC;
-		/* --accent: #3C908D; */
-		--accent: #F59F99;
-		--contrast: #EE6055;
-		--contrast-dark: #95180F;
+	--light: #fdfdfc;
+	/* --accent: #3C908D; */
+	--accent: #f59f99;
+	--contrast: #ee6055;
+	--contrast-dark: #95180f;
 
-		--dark:  #4A4A48;
-		--darker: #151514;
-
+	--dark: #4a4a48;
+	--darker: #151514;
 
 	/*============================ */
 	/* = SPACING */
 	/*============================ */
-		--spacing-pico:      0.1rem;
-		--spacing-nano:      0.3rem;
-		--spacing-micro:     .5rem;
-		/*--- */
-		--spacing-thinnest:  1rem;
-		--spacing-thinner:   1.5rem;
-		--spacing-thin:      2rem;
-		--spacing-broad:     4rem;
-		--spacing-broader:   6rem;
-		--spacing-broadest:  8rem;
-		--spacing-large:     10rem;
-		--spacing-larger:    12rem;
-		--spacing-largest:   16rem;
-		/*--- */
-		--spacing-mega:      24rem;
-		--spacing-giga:      54rem;
-		--spacing-tera:      78rem;
+	--spacing-pico: 0.1rem;
+	--spacing-nano: 0.3rem;
+	--spacing-micro: 0.5rem;
+	/*--- */
+	--spacing-thinnest: 1rem;
+	--spacing-thinner: 1.5rem;
+	--spacing-thin: 2rem;
+	--spacing-broad: 4rem;
+	--spacing-broader: 6rem;
+	--spacing-broadest: 8rem;
+	--spacing-large: 10rem;
+	--spacing-larger: 12rem;
+	--spacing-largest: 16rem;
+	/*--- */
+	--spacing-mega: 24rem;
+	--spacing-giga: 54rem;
+	--spacing-tera: 78rem;
 
 	/*============================ */
 	/* = DIMENSIONS */
 	/*============================ */
-		--dimension-tiniest:   calc(var(--font-miniature) * 20);
-		--dimension-tinier:    calc(var(--font-shortest) * 20);
-		--dimension-tiny:      calc(var(--font-shorter) * 20);
-		--dimension-smallest:  calc(var(--font-short) * 20);
-		--dimension-smaller:   calc(var(--font-tall) * 20);
-		--dimension-small:     calc(var(--font-tallest) * 20);
-		--dimension-big:       calc(var(--font-huger) * 20);
-		--dimension-bigger:    calc(var(--font-hugest) * 20);
-		--dimension-biggest:   calc(var(--font-giant) * 10);
+	--dimension-tiniest: calc(var(--font-miniature) * 20);
+	--dimension-tinier: calc(var(--font-shortest) * 20);
+	--dimension-tiny: calc(var(--font-shorter) * 20);
+	--dimension-smallest: calc(var(--font-short) * 20);
+	--dimension-smaller: calc(var(--font-tall) * 20);
+	--dimension-small: calc(var(--font-tallest) * 20);
+	--dimension-big: calc(var(--font-huger) * 20);
+	--dimension-bigger: calc(var(--font-hugest) * 20);
+	--dimension-biggest: calc(var(--font-giant) * 10);
 
 	/*========================= */
 	/* = FONT-FAMILY */
 	/*========================= */
-		--font-accent: 'Signika','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-		--font-regular: 'Overpass', 'Helvetica', 'Arial', sans-serif;
+	--font-accent: "Signika", "Gill Sans", "Gill Sans MT", Calibri,
+		"Trebuchet MS", sans-serif;
+	--font-regular: "Overpass", "Helvetica", "Arial", sans-serif;
+
+	font-size: 16px;
+
+	@media (min-width: 769px) {
+		font-size: 18px;
+	}
 
 	/*========================= */
 	/* = FONT-SIZE */
 	/*========================= */
-		--font-mini:  0.64rem;
-		--font-short:      0.8rem;
-		--font-current:    1rem;
-		--font-tall:       1.25rem;
-		--font-taller:     1.563rem;
-		--font-tallest:    1.953rem;
-		--font-huge:       2.441rem;
-		--font-huger:      3.052rem;
-		--font-hugest:     3.815rem;
-		--font-giant:      120px;
+	--font-mini: 0.64rem;
+	--font-short: 0.8rem;
+	--font-current: 1rem;
+	--font-tall: 1.25rem;
+	--font-taller: 1.563rem;
+	--font-tallest: 1.953rem;
+	--font-huge: 2.441rem;
+	--font-huger: 3.052rem;
+	--font-hugest: 3.815rem;
+	--font-giant: 120px;
 
-	/*============================ */
-	/* = LETTER-SPACING */
-	/*============================ */
-		--letter-spacing-narrowest:  -0.14em;
-		--letter-spacing-narrower:   -0.041275em;
-		--letter-spacing-narrow:     -0.01275em;
-		--letter-spacing-wide:        0.02em;
-		--letter-spacing-wider:       0.04125em;
-		--letter-spacing-widest:      0.0675em;
-
-	/*============================ */
-	/* = OPACITY */
-	/*============================ */
-		--transparent:           0;
-		--almost-transparent:    0.1;
-		--quasi-transparent:     0.2;
-		--semi-transparent:      0.3;
-		--partially-transparent: 0.4;
-		--translucent:           0.5;
-		--partially-opaque:      0.6;
-		--semi-opaque:           0.7;
-		--quasi-opaque:          0.8;
-		--almost-opaque:         0.9;
-		--opaque:                1;
+	/*========================= */
+	/* = FONTS */
+	/*========================= */
+	--uber: 700 var(--font-huge) / 1 var(--font-accent);
+	--h1: 700 var(--font-tallest) / 1 var(--font-accent);
+	--h2: 700 var(--font-taller) / 1 var(--font-accent);
+	--h3: 700 var(--font-current) / 1 var(--font-accent);
+	--regular: 400 var(--font-current) / 1 var(--font-regular);
 
 	/*============================ */
 	/* = BORDER SIZE */
 	/*============================ */
-		--border-slimmest:  1px;
-		--border-slimmer:   2px;
-		--border-slim:      3px;
-		--border-thick:     8px;
-		--border-thicker:  10px;
-		--border-thickest: 20px;
+	--border-slimmest: 1px;
+	--border-slimmer: 2px;
+	--border-slim: 3px;
+	--border-thick: 8px;
+	--border-thicker: 10px;
+	--border-thickest: 20px;
 
 	/*========================= */
 	/* = RADIUS */
 	/*========================= */
-		--radius-sharpest:     2px;
-		--radius-sharper:      3px;
-		--radius-sharp:        5px;
-		--radius-dull:         15px;
-		--radius-duller:       20px;
-		--radius-dullest:      80px;
+	--radius-sharpest: 2px;
+	--radius-sharper: 3px;
+	--radius-sharp: 5px;
+	--radius-dull: 15px;
+	--radius-duller: 20px;
+	--radius-dullest: 80px;
 
 	/*========================= */
 	/* = DURATION */
 	/*========================= */
-		--duration-fastest:    80ms;
-		--duration-faster: 	  200ms;
-		--duration-fast:		300ms;
-		--duration-medium: 	  500ms;
-		--duration-slow: 		  750ms;
-		--duration-slower:     1000ms;
-		--duration-slowest: 	10000ms;
-
-	/*========================= */
-	/* = EASINGS */
-	/*========================= */
-		--ease-standard-in: --ease-in-quad;
-		--ease-standard: --ease-in-out-cubic;
-		--ease-alternate: --ease-in-out-back;
-		--ease-standard-out: --ease-out-quad;
-
-		--ease-linear:       cubic-bezier(0, 0, 1, 1);
-		--ease-in:           cubic-bezier(0.42, 0, 1, 1);
-		--ease-out:          cubic-bezier(0, 0, 0.58, 1);
-		--ease-in-out:       cubic-bezier(0.42, 0, 0.58, 1);
-		--ease-in-sine:      cubic-bezier(0.47, 0, 0.745, 0.715);
-		--ease-out-sine:     cubic-bezier(0.39, 0.575, 0.565, 1);
-		--ease-in-out-sine:  cubic-bezier(0.445, 0.05, 0.55, 0.95);
-		--ease-in-quad:      cubic-bezier(0.55, 0.085, 0.68, 0.53);
-		--ease-out-quad:     cubic-bezier(0.25, 0.46, 0.45, 0.94);
-		--ease-in-out-quad:  cubic-bezier(0.455, 0.03, 0.515, 0.955);
-		--ease-in-cubic:     cubic-bezier(0.55, 0.055, 0.675, 0.19);
-		--ease-out-cubic:    cubic-bezier(0.215, 0.61, 0.355, 1);
-		--ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
-		--ease-in-quart:     cubic-bezier(0.895, 0.03, 0.685, 0.22);
-		--ease-out-quart:    cubic-bezier(0.165, 0.84, 0.44, 1);
-		--ease-in-out-quart:  cubic-bezier(0.77, 0, 0.175, 1);
-		--ease-in-quint:     cubic-bezier(0.755, 0.05, 0.855, 0.06);
-		--ease-out-quint:    cubic-bezier(0.23, 1, 0.32, 1);
-		--ease-in-expo:      cubic-bezier(0.95, 0.05, 0.795, 0.035);
-		--ease-out-expo:     cubic-bezier(0.19, 1, 0.22, 1);
-		--ease-in-out-expo:  cubic-bezier(1, 0, 0, 1);
-		--ease-in-circ:      cubic-bezier(0.6, 0.04, 0.98, 0.335);
-		--ease-out-circ:     cubic-bezier(0.075, 0.82, 0.165, 1);
-		--ease-in-out-circ:  cubic-bezier(0.785, 0.135, 0.15, 0.86);
-		--ease-in-back:      cubic-bezier(0.6, -0.28, 0.735, 0.045);
-		--ease-out-back:     cubic-bezier(0.175, 0.885, 0.32, 1.275);
-		--ease-in-out-back:  cubic-bezier(0.68, -0.25, 0.265, 1.25);
-		--ease-back-in:      cubic-bezier(0.6, -0.28, 0.735, 0.045);
-		--ease-bounce-light: cubic-bezier(0, 1.1, 1, 1.1);
+	--duration-fastest: 80ms;
+	--duration-faster: 200ms;
+	--duration-fast: 300ms;
+	--duration-medium: 500ms;
+	--duration-slow: 750ms;
+	--duration-slower: 1000ms;
+	--duration-slowest: 10000ms;
 }
