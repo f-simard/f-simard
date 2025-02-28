@@ -9,8 +9,6 @@ body {
 }
 
 main {
-
-	padding-inline: var(--spacing-thin);
 	p + p {
 		margin-top: 0.5rem;
 	}
@@ -20,8 +18,7 @@ body > header {
 	background-color: var(--dark);
 }
 
-main > * + :is(section, div),
-main > section:first-child {
+.ctn {
 	margin-top: var(--spacing-thin);
 
 	@media screen and (min-width: 768px) {

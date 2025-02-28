@@ -34,7 +34,7 @@
 .nav {
 	background-color: var(--dark);
 	color: var(--light);
-	padding: var(--spacing-thin);
+	padding: var(--spacing-thinner);
 
 	position: fixed;
 	z-index: 1;
@@ -55,13 +55,13 @@
 
 .nav {
 	display: flex;
-	gap: var(--spacing-thin);
+	gap: var(--spacing-thinner);
 	align-items: center;
 	justify-content: center;
 	padding-top: 5rem;
 
 	@media (min-width: 769px) {
-		padding-top: var(--spacing-thin);
+		padding-top: var(--spacing-thinner);
 		justify-content: space-between;
 	}
 }
