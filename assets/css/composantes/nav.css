@@ -64,22 +64,36 @@
 		padding-top: var(--spacing-thinner);
 		justify-content: space-between;
 	}
+
+	.internal {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-thinner);
+		align-items: center;
+		justify-content: center;
+
+		@media (min-width: 769px) {
+			flex-direction: row;
+		}
+	}
 }
 
-.nav > a {
+.nav .internal > a {
 	font-family: var(--font-accent);
 	color: var(--light);
 
 	transition-property: color;
 	transition-duration: var(--duration-faster);
 	transition-timing-function: var(--ease-in-out);
+	text-underline-offset: 0.25rem;
 
 	&:hover {
 		color: var(--contrast);
 	}
 
-	&.active{
-		text-decoration: underline wavy var(--font-accent);
+	&.active {
+		text-decoration: underline wavy var(--accent);
+		text-underline-offset: 0.25rem;
 	}
 }
 
