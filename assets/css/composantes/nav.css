@@ -77,6 +77,10 @@
 	&:hover {
 		color: var(--contrast);
 	}
+
+	&.active{
+		text-decoration: underline wavy var(--font-accent);
+	}
 }
 
 .nav__link-zone {
@@ -103,6 +107,6 @@
 	}
 }
 
-.nav__link:hover > path {
+.nav__link:hover > use {
 	fill: var(--contrast);
 }
