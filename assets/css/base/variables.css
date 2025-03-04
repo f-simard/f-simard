@@ -79,7 +79,9 @@
 	--h1: 700 var(--font-tallest) / 1 var(--font-accent);
 	--h2: 700 var(--font-taller) / 1 var(--font-accent);
 	--h3: 700 var(--font-current) / 1 var(--font-accent);
+	--large: 400 var(--font-tall) / 1 var(--font-accent);
 	--regular: 400 var(--font-current) / 1 var(--font-regular);
+	--short: 400 var(--font-short) / 1 var(--font-regular);
 
 	/*============================ */
 	/* = BORDER SIZE */
