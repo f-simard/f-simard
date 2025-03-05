@@ -7,6 +7,7 @@
 	<meta name="author" content="Filippa Simard">
 	<meta name="description" content="composantes avec differentes librairies">
 	<link rel="stylesheet" href="assets/css/main.css">
+	<script type="module" src="assets/js/pages/lab.js"></script>
 	<title>Lab</title>
 </head>
 
@@ -48,27 +49,82 @@
 			</h1>
 			<p>Bienvenue dans mon catalogue de composantes!</p>
 			<nav>
-				<a href="#gallery">Gallerie</a>
-				<a href="#">Épisode aléatoir</a>
-				<a href="#restaurant">Suggestion de restaurant</a>
-				<a href="#modale">Modale</a>
-				<a href="#parallax">Banniere parallax</a>
+				<a href="#lab_parallax">Banniere avec parallax</a>
+				<a href="#lab_modales">Modale</a>
+				<a href="#lab_gallery">Gallerie</a>
+				<a href="#lab_random">Épisode aléatoir</a>
+				<a href="#lab_restaurant">Suggestion de restaurant</a>
 			</nav>
 		</section>
-		<section id="gallery">
-			<h2>Gallerie</h2>
+		<section id="lab_parallax">
+			<div class="ctn">
+				<h2>Banniere parallax <span>with JS/CSS</span></h2>
+			</div>
+			<div class="liner">
+				<p-arallax speed="-1">
+					<figure>
+						<img src="assets/img/philippe-oursel-ZAF-rhUyESY-unsplash.jpg" alt="">
+					</figure>
+				</p-arallax>
+				<svg viewBox="0 0 1280 132.22" class="wave top">
+					<use xlink:href="#wave"></use>
+				</svg>
+				<svg viewBox="0 0 1280 132.22" class="wave bottom">
+					<use xlink:href="#wave"></use>
+				</svg>
+			</div>
 		</section>
-		<section id="random-episod">
-			<h2>Épisode Aléatoir</h2>
+		<section id="lab_modales">
+			<div class="ctn">
+				<h2>Modales <span> withJS/CSS</span></h2>
+				<div class="button__group js-launchToast">
+					<button class="button button_outline-darker" data-demo="fullScreenAuto">Lancer modale plein ecran
+						avec fermeture
+						automatique</button>
+					<button class="button button_outline-darker" data-demo="fullScreenMan">Lancer modale plein ecran
+						avec fermeture
+						manuelle</button>
+					<button class="button button_outline-darker" data-demo="toastTopInOutAuto">Lancer modale de type
+						bannière en haut de
+						page</button>
+					<button class="button button_outline-darker" data-demo="toastBottomRightAuto">Lancer modale au coin
+						droit de la
+						page</button>
+				</div>
+				<template id="template-toastAuto">
+					<div class="toast">
+						<div class="toast__content">
+							<p class="toast__message">{{message}}</p>
+						</div>
+					</div>
+				</template>
+				<template id="template-toastMan">
+					<div class="toast">
+						<div class="toast__content">
+							<p class="toast__message">{{message}}</p>
+							<button class="button button_out-darker_bg-transparent">Fermer</button>
+						</div>
+					</div>
+				</template>
+			</div>
 		</section>
-		<section id="restaurant">
-			<h2>Restaurants</h2>
+		<section id="lab_gallery">
+			<div class="ctn">
+				<h2>Gallerie</h2>
+				<p>🦺 À venir</p>
+			</div>
 		</section>
-		<section id="parallax">
-			<h2>Banniere parallax</h2>
+		<section id="lab_random">
+			<div class="ctn">
+				<h2>Épisode Aléatoir</h2>
+				<p>🦺 À venir</p>
+			</div>
 		</section>
-		<section id="Modale">
-			<h2>Modale</h2>
+		<section id="lab_restaurant">
+			<div class="ctn">
+				<h2>Restaurants</h2>
+				<p>🦺 À venir</p>
+			</div>
 		</section>
 	</main>
 	<div id="globals">
@@ -88,6 +144,12 @@
 						d="M9.738,10.3a.516.516,0,0,0-.707,0L.768,18.56a2.483,2.483,0,0,0-.733,1.768,2.564,2.564,0,0,0,2.5,2.5A2.481,2.481,0,0,0,4.3,22.1l8.263-8.262a.5.5,0,0,0,0-.707Z" />
 					<path
 						d="M23.524,9.236l-1.06-1.061h0a1,1,0,0,0-1.413,0,1.022,1.022,0,0,1-1.414,0A1,1,0,0,1,19.413,7.1a1.5,1.5,0,0,0-.335-1.607C17.646,4.056,17.07,3.48,16.785,3.249l.007-.006A7.746,7.746,0,0,0,6.761,2.8a1,1,0,0,0-.348,1.138A1.013,1.013,0,0,0,7.4,4.6,5.014,5.014,0,0,1,11.15,6.055c.518.518.78.917.78,1.186a.41.41,0,0,1-.152.308L10.8,8.53a.5.5,0,0,0,0,.707l2.829,2.828a.5.5,0,0,0,.707,0L15.393,11a1.022,1.022,0,0,1,1.413,0,1,1,0,0,1,0,1.414,1,1,0,0,0,0,1.415l1.061,1.061a1.5,1.5,0,0,0,2.121,0l3.535-3.537a1.5,1.5,0,0,0,0-2.121Z" />
+				</symbol>
+				<symbol id="wave">
+					<g id="Layer_1-2" data-name="Layer 1">
+						<path
+							d="m0,132.22l1280-5.19V36.47l-124.58,20.97c-106.17,17.87-214.01,21.47-321.01,10.72l-41.3-4.15c-41.12-4.13-82.11-9.72-122.89-16.75l-168.3-29.02C387.74-1.44,271.67-5.22,156.59,7.01l-2.17.23C102.33,12.77,50.71,22.54,0,36.47h0" />
+					</g>
 				</symbol>
 			</defs>
 		</svg>

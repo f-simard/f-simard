@@ -20,7 +20,7 @@ body > header {
 
 .ctn {
 	margin-top: var(--spacing-thin);
-	padding-inline: 16px;
+	padding-inline: 1rem;
 
 	@media screen and (min-width: 768px) {
 		margin-top: var(--spacing-broad);

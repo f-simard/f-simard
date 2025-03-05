@@ -19,9 +19,12 @@
 	}
 }
 
+[id="lab"] {
+	scroll-behavior: smooth;
+}
 [id="lab_hero"] {
 	padding-top: 10rem;
-
+	padding-inline: 1rem;
 	max-width: max-content;
 	margin-inline: auto;
 	text-align: center;
@@ -49,7 +52,9 @@
 		display: flex;
 		align-items: center;
 		gap: 0.5rem;
+		flex-wrap: wrap;
 		margin-top: 2rem;
+		padding: 1rem;
 
 		a {
 			display: block;
@@ -59,10 +64,54 @@
 			padding: 0.4rem 0.5rem 0.25rem 0.5rem;
 			transition: all 0.15s ease-in;
 
-			&:hover{
+			&:hover {
 				background-color: var(--dark);
 				color: var(--light);
 			}
+		}
+	}
+}
+
+[id="lab"] {
+	h2 {
+		margin-bottom: 1rem;
+		font: var(--h2);
+
+		span{
+			font: var(--regular);
+		};
+	}
+}
+
+[id="lab_parallax"] {
+	.liner {
+		position: relative;
+		height: 40vw;
+		overflow: hidden;
+	}
+
+	p-arallax {
+		transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+		position: absolute;
+		inset: 0;
+	}
+
+	.wave {
+		position: absolute;
+		left: 0;
+		right: 0;
+
+		use {
+			fill: var(--light);
+		}
+
+		&.top {
+			top: -10px;
+			rotate: 180deg;
+		}
+
+		&.bottom {
+			bottom: -10px;
 		}
 	}
 }
