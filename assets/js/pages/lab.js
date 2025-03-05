@@ -1,5 +1,5 @@
 import ToastModale from "../composantes/ToastModale.js";
-import Parallax from "../composantes/Parallax.js";
+import Parallax from "../composantes/parallax.js";
 
 
 (function () {

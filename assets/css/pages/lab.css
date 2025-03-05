@@ -19,9 +19,6 @@
 	}
 }
 
-[id="lab"] {
-	scroll-behavior: smooth;
-}
 [id="lab_hero"] {
 	padding-top: 10rem;
 	padding-inline: 1rem;
@@ -51,6 +48,7 @@
 	nav {
 		display: flex;
 		align-items: center;
+		justify-content: ce;
 		gap: 0.5rem;
 		flex-wrap: wrap;
 		margin-top: 2rem;
@@ -77,23 +75,31 @@
 		margin-bottom: 1rem;
 		font: var(--h2);
 
-		span{
+		span {
 			font: var(--regular);
-		};
+		}
 	}
+}
+
+section:where([id^="lab_"]) {
+	scroll-behavior: smooth;
+	scroll-margin-top: 2rem;
 }
 
 [id="lab_parallax"] {
 	.liner {
+		display: block;
 		position: relative;
-		height: 40vw;
+		height: 50vw;
 		overflow: hidden;
 	}
 
 	p-arallax {
-		transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
 		position: absolute;
 		inset: 0;
+	}
+	img {
+		scale: 1.7;
 	}
 
 	.wave {

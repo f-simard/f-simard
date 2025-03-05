@@ -27,8 +27,8 @@ class Parallax extends HTMLElement {
 		const yPos = (window.scrollY - this.initialTop) * speed;
 		const adjustedYPos = yPos / elementHeight;
 
-		this.style.transform = `translate${dir}(${adjustedYPos * 100}px)`; // Multiply by 100 to make it percentage-based
+		this.style.transform = `translate${dir}(${adjustedYPos * 75}px)`;
 	}
 }
 
-export default Parallax;
+export default Parallax
