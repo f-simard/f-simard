@@ -7,8 +7,11 @@
 @import url('composantes/nav.css');
 @import url('composantes/button.css');
 @import url('composantes/cv-card.css');
+@import url('composantes/toast.css');
+@import url('composantes/p-arallax.css');
 @import url('composantes/utilities.css');
 
 /*pages*/
 @import url('pages/home.css');
 @import url('pages/propos.css');
+@import url('pages/lab.css');
