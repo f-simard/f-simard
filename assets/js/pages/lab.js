@@ -19,4 +19,6 @@ import Parallax from "../composantes/parallax.js";
 	}
 	
 window.customElements.define("p-arallax", Parallax);
+window.customElements.define("s-wiper", Swiper);
+
 })();
