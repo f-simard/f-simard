@@ -1,6 +1,6 @@
 import ToastModale from "../composantes/ToastModale.js";
 import Parallax from "../composantes/parallax.js";
-
+import Gallery from "../composantes/Gallery.js";
 
 (function () {
 	const btnsLaunchToast = document.querySelector(".js-launchToast");
@@ -19,6 +19,6 @@ import Parallax from "../composantes/parallax.js";
 	}
 	
 window.customElements.define("p-arallax", Parallax);
-window.customElements.define("s-wiper", Swiper);
+window.customElements.define("g-allery", Gallery);
 
 })();

@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap');
 
-@import url('base/variables.css');
-@import url('base/reset.css');
-@import url('base/general.css');
+@import 'base/variables.css';
+@import 'base/reset.css';
+@import 'base/general.css';
 
-@import url('composantes/nav.css');
-@import url('composantes/button.css');
-@import url('composantes/cv-card.css');
-@import url('composantes/toast.css');
-@import url('composantes/p-arallax.css');
-@import url('composantes/utilities.css');
+@import 'composantes/nav.css';
+@import 'composantes/button.css';
+@import 'composantes/cv-card.css';
+@import 'composantes/toast.css';
+@import 'composantes/p-arallax.css';
+@import 'composantes/utilities.css';
 
 /*pages*/
-@import url('pages/home.css');
-@import url('pages/propos.css');
-@import url('pages/lab.css');
+@import 'pages/home.css';
+@import 'pages/propos.css';
+@import 'pages/lab.css';
