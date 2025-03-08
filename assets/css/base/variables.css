@@ -32,18 +32,6 @@
 	--spacing-giga: 54rem;
 	--spacing-tera: 78rem;
 
-	/*============================ */
-	/* = DIMENSIONS */
-	/*============================ */
-	--dimension-tiniest: calc(var(--font-miniature) * 20);
-	--dimension-tinier: calc(var(--font-shortest) * 20);
-	--dimension-tiny: calc(var(--font-shorter) * 20);
-	--dimension-smallest: calc(var(--font-short) * 20);
-	--dimension-smaller: calc(var(--font-tall) * 20);
-	--dimension-small: calc(var(--font-tallest) * 20);
-	--dimension-big: calc(var(--font-huger) * 20);
-	--dimension-bigger: calc(var(--font-hugest) * 20);
-	--dimension-biggest: calc(var(--font-giant) * 10);
 
 	/*========================= */
 	/* = FONT-FAMILY */
