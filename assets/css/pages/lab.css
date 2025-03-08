@@ -125,7 +125,7 @@ section:where([id^="lab_"]) {
 
 [id='lab_gallery']{
 	
-	c-gallery{
+	g-allery{
 		margin-top: var(--spacing-thinner);
 	}
 	

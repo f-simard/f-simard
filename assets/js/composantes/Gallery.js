@@ -16,10 +16,10 @@ class Gallery extends HTMLElement {
 			},
 			breakpoints: {
 				1024: {
-					slidesPerView: 2.6,
+					slidesPerView: 3.6,
 				},
 				1600: {
-					slidesPerView: 3.6,
+					slidesPerView: 4.6,
 				},
 			},
 		});
