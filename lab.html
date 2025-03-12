@@ -12,7 +12,10 @@
 	<link href="
 	https://cdn.jsdelivr.net/npm/swiper@11.2.5/swiper-bundle.min.css
 	" rel="stylesheet">
-	
+	<script src="https://unpkg.com/htmx.org@2.0.4"
+		integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
+		crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/htmx.org/dist/ext/json-enc.js"></script>
 	<link rel="stylesheet" href="assets/css/main.css">
 	<script type="module" src="assets/js/pages/lab.js"></script>
 	<title>Lab</title>
@@ -30,220 +33,219 @@
 			<div class="nav__link-zone">
 				<a href="https://www.linkedin.com/in/filippa-simard-2a4953a5/" target="_blank">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-label="logo LinkedIn"
-					class="nav__link"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-					<title>Logo LinkedIn</title>
-					<use xlink:href="#linkedin" />
-				</svg>
-			</a>
-			<a href="https://github.com/f-simard" target="_blank">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" aria-label="Logo Github"
-				class="nav__link"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-				<title>Logo GitHub</title>
-				<use xlink:href="#github" />
-			</svg>
-		</a>
-	</div>
-</nav>
-</header>
-<main id="lab">
-	<section id="lab_hero">
-		<h1>
-			<span style="--i:0">🔬</span>
-			<span style="--i:1">L</span>
-			<span style="--i:2">A</span>
-			<span style="--i:3">B</span>
-			<span style="--i:4">O</span>
-		</h1>
-		<p>Bienvenue dans mon catalogue de composantes!</p>
-		<nav>
-			<a href="#lab_parallax">Banniere avec parallax</a>
-			<a href="#lab_modales">Modale</a>
-			<a href="#lab_gallery">Gallerie</a>
-			<a href="#lab_random">Épisode aléatoir</a>
-			<a href="#lab_restaurant">Suggestion de restaurant</a>
+						class="nav__link"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+						<title>Logo LinkedIn</title>
+						<use xlink:href="#linkedin" />
+					</svg>
+				</a>
+				<a href="https://github.com/f-simard" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" aria-label="Logo Github"
+						class="nav__link"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+						<title>Logo GitHub</title>
+						<use xlink:href="#github" />
+					</svg>
+				</a>
+			</div>
 		</nav>
-	</section>
-	<section id="lab_parallax">
-		<div class="ctn">
-			<h2>Banniere parallax <span>avec JS/CSS</span></h2>
-		</div>
-		<div class="liner">
-			<p-arallax speed="-0.5">
-				<img src="assets/img/philippe-oursel-ZAF-rhUyESY-unsplash.jpg" alt="">
-			</p-arallax>
-			<svg viewBox="0 0 1280 132.22" class="wave top">
-				<use xlink:href="#wave"></use>
-			</svg>
-			<svg viewBox="0 0 1280 132.22" class="wave bottom">
-				<use xlink:href="#wave"></use>
-			</svg>
-		</div>
-	</section>
-	<section id="lab_modales">
-		<div class="ctn">
-			<h2>Modales <span> avec JS/CSS</span></h2>
-			<div class="button__group js-launchToast">
-				<button class="button button_outline-darker" data-demo="fullScreenAuto">Lancer modale plein ecran
-					avec fermeture
-					automatique</button>
+	</header>
+	<main id="lab">
+		<section id="lab_hero">
+			<h1>
+				<span style="--i:0">🔬</span>
+				<span style="--i:1">L</span>
+				<span style="--i:2">A</span>
+				<span style="--i:3">B</span>
+				<span style="--i:4">O</span>
+			</h1>
+			<p>Bienvenue dans mon catalogue de composantes!</p>
+			<nav>
+				<a href="#lab_parallax">Banniere avec parallax</a>
+				<a href="#lab_modales">Modale</a>
+				<a href="#lab_gallery">Gallerie</a>
+				<a href="#lab_random">Fait aléatoire</a>
+			</nav>
+		</section>
+		<section id="lab_parallax">
+			<div class="ctn">
+				<h2>Banniere parallax <span>avec JS/CSS</span></h2>
+			</div>
+			<div class="liner">
+				<p-arallax speed="-0.5">
+					<img src="assets/img/philippe-oursel-ZAF-rhUyESY-unsplash.jpg" alt="">
+				</p-arallax>
+				<svg viewBox="0 0 1280 132.22" class="wave top">
+					<use xlink:href="#wave"></use>
+				</svg>
+				<svg viewBox="0 0 1280 132.22" class="wave bottom">
+					<use xlink:href="#wave"></use>
+				</svg>
+			</div>
+		</section>
+		<section id="lab_modales">
+			<div class="ctn">
+				<h2>Modales <span> avec JS/CSS</span></h2>
+				<div class="button__group js-launchToast">
+					<button class="button button_outline-darker" data-demo="fullScreenAuto">Lancer modale plein ecran
+						avec fermeture
+						automatique</button>
 					<button class="button button_outline-darker" data-demo="fullScreenMan">Lancer modale plein ecran
 						avec fermeture
 						manuelle</button>
-						<button class="button button_outline-darker" data-demo="toastTopInOutAuto">Lancer modale de type
-							bannière en haut de
-							page</button>
-							<button class="button button_outline-darker" data-demo="toastBottomRightAuto">Lancer modale au coin
-								droit de la
-								page</button>
-							</div>
-							<template id="template-toastAuto">
-								<div class="toast">
-									<div class="toast__content">
-										<p class="toast__message">{{message}}</p>
-									</div>
-								</div>
-							</template>
-							<template id="template-toastMan">
-								<div class="toast">
-									<div class="toast__content">
-										<p class="toast__message">{{message}}</p>
-										<button class="button button_out-darker_bg-transparent">Fermer</button>
-									</div>
-								</div>
-							</template>
+					<button class="button button_outline-darker" data-demo="toastTopInOutAuto">Lancer modale de type
+						bannière en haut de
+						page</button>
+					<button class="button button_outline-darker" data-demo="toastBottomRightAuto">Lancer modale au coin
+						droit de la
+						page</button>
+				</div>
+				<template id="template-toastAuto">
+					<div class="toast">
+						<div class="toast__content">
+							<p class="toast__message">{{message}}</p>
 						</div>
-					</section>
-					<section id="lab_gallery">
-						<div class="ctn">
-							<h2>Gallerie <span> avec Swiper.js</span></h2>
-							<p>Animaux dans ma gallerie photo de téléphone</p>
-							<g-allery class="swiper" data-id="pet-gallery">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<figure>
-											<img src="assets/img/loki.png" alt="chat">
-											<figcaption>
-												Loki, roi de la maisonnée
-											</figcaption>
-										</figure>
-									</div>
-									<div class="swiper-slide">
-										<figure>
-											<img src="assets/img/timmy_lily.png" alt="placeholder">
-											<figcaption>
-												Timmy et Lily, secourus par une de mes très bonnes amies
-											</figcaption>
-										</figure>
-									</div>
-									<div class="swiper-slide">
-										<figure>
-											<img src="assets/img/oreo.png" alt="chat">
-											<figcaption>
-												Oreo, tuxedo qui refuse d'accepter qu'il dépasse de son panier
-											</figcaption>
-										</figure>
-									</div>
-									<div class="swiper-slide">
-										<figure>
-											<img src="assets/img/mochii.png" alt="chat">
-											<figcaption>
-												Mochii, timide
-											</figcaption>
-										</figure>
-									</div>
-									<div class="swiper-slide">
-										<figure>
-											<img src="assets/img/maki.png" alt="chat">
-											<figcaption>
-												Maki, semi sauvage qui adore aller dehors
-											</figcaption>
-										</figure>
-									</div>
-									<div class="swiper-slide">
-										<figure>
-											<img src="assets/img/venus.png" alt="cat">
-											<figcaption>
-												Venus, qui aime bien partager les verres d'eau
-											</figcaption>
-										</figure>
-									</div>
-									<div class="swiper-slide">
-										<figure>
-											<img src="assets/img/baba.png" alt="placeholder">
-											<figcaption>
-												Babaganoush, qui aime bien partager les verres d'eau
-											</figcaption>
-										</figure>
-									</div>
-									<div class="swiper-slide">
-										<figure>
-											<img src="assets/img/velcro.png" alt="cat">
-											<figcaption>
-												Velcro, indigne de son nom car elle refuse les contacts
-											</figcaption>
-										</figure>
-									</div>
-									<div class="swiper-slide">
-										<figure>
-											<img src="assets/img/holly.png" alt="cat">
-											<figcaption>
-												Holly, big void
-											</figcaption>
-										</figure>
-									</div>
-									<div class="swiper-slide">
-										<figure>
-											<img src="assets/img/dustin.png" alt="cat">
-											<figcaption>
-												Dustin, dépendant affectif
-											</figcaption>
-										</figure>
-									</div>
-								</div>
-								<div id="pagination-pet-gallery" class="swiper-pagination"></div>
-							</g-allery>
+					</div>
+				</template>
+				<template id="template-toastMan">
+					<div class="toast">
+						<div class="toast__content">
+							<p class="toast__message">{{message}}</p>
+							<button class="button button_out-darker_bg-transparent">Fermer</button>
 						</div>
-					</section>
-					<section id="lab_random">
-						<div class="ctn">
-							<h2>Épisode Aléatoir</h2>
-							<p>🦺 À venir</p>
-						</div>
-					</section>
-					<section id="lab_restaurant">
-						<div class="ctn">
-							<h2>Restaurants</h2>
-							<p>🦺 À venir</p>
-						</div>
-					</section>
-				</main>
-				<div id="globals">
-					<svg style="display: none;">
-						<defs>
-							<path id="linkedin"
-							d="M41.6 3.2H6.4C4.8 3.2 3.2 4.8 3.2 6.4v35.2c0 1.6 1.6 3.2 3.2 3.2h35.2c1.6 0 3.2-1.6 3.2-3.2V6.4c0-1.6-1.6-3.2-3.2-3.2zM13.5 41.6H6.9V20.2h6.6v21.4zm-3.3-24.3c-2.1 0-3.9-1.7-3.9-3.9s1.7-3.9 3.9-3.9 3.9 1.7 3.9 3.9-1.7 3.9-3.9 3.9zm28.2 24.3h-6.6V31.2c0-2.5-.1-5.7-3.5-5.7-3.5 0-4 2.7-4 5.5v10.6h-6.6V20.2h6.4v2.9h.1c.9-1.7 3.1-3.5 6.3-3.5 6.7 0 8 4.4 8 10.2v12.8z" />
-							<path id="github" fill-rule="evenodd" clip-rule="evenodd"
-							d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" />
-							<path id="arrow-forward"
-							d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
-						</path>
-						<polygon id="external-link" fill-rule="evenodd"
-						points="9.586 5 5 5 5 3 13 3 13 11 11 11 11 6.414 4.707 12.707 3.293 11.293" />
-						<symbol id="construction" viewBox="0 0 24 24">
-							<path
-							d="M9.738,10.3a.516.516,0,0,0-.707,0L.768,18.56a2.483,2.483,0,0,0-.733,1.768,2.564,2.564,0,0,0,2.5,2.5A2.481,2.481,0,0,0,4.3,22.1l8.263-8.262a.5.5,0,0,0,0-.707Z" />
-							<path
-							d="M23.524,9.236l-1.06-1.061h0a1,1,0,0,0-1.413,0,1.022,1.022,0,0,1-1.414,0A1,1,0,0,1,19.413,7.1a1.5,1.5,0,0,0-.335-1.607C17.646,4.056,17.07,3.48,16.785,3.249l.007-.006A7.746,7.746,0,0,0,6.761,2.8a1,1,0,0,0-.348,1.138A1.013,1.013,0,0,0,7.4,4.6,5.014,5.014,0,0,1,11.15,6.055c.518.518.78.917.78,1.186a.41.41,0,0,1-.152.308L10.8,8.53a.5.5,0,0,0,0,.707l2.829,2.828a.5.5,0,0,0,.707,0L15.393,11a1.022,1.022,0,0,1,1.413,0,1,1,0,0,1,0,1.414,1,1,0,0,0,0,1.415l1.061,1.061a1.5,1.5,0,0,0,2.121,0l3.535-3.537a1.5,1.5,0,0,0,0-2.121Z" />
-						</symbol>
-						<symbol id="wave">
-							<g id="Layer_1-2" data-name="Layer 1">
-								<path
-								d="m0,132.22l1280-5.19V36.47l-124.58,20.97c-106.17,17.87-214.01,21.47-321.01,10.72l-41.3-4.15c-41.12-4.13-82.11-9.72-122.89-16.75l-168.3-29.02C387.74-1.44,271.67-5.22,156.59,7.01l-2.17.23C102.33,12.77,50.71,22.54,0,36.47h0" />
-							</g>
-						</symbol>
-					</defs>
-				</svg>
+					</div>
+				</template>
 			</div>
-		</body>
-		
-		</html>
+		</section>
+		<section id="lab_gallery">
+			<div class="ctn">
+				<h2>Gallerie <span> avec Swiper.js</span></h2>
+				<p>Animaux dans ma gallerie photo de téléphone</p>
+				<g-allery class="swiper" data-id="pet-gallery">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<figure>
+								<img src="assets/img/loki.png" alt="chat">
+								<figcaption>
+									Loki, roi de la maisonnée
+								</figcaption>
+							</figure>
+						</div>
+						<div class="swiper-slide">
+							<figure>
+								<img src="assets/img/timmy_lily.png" alt="placeholder">
+								<figcaption>
+									Timmy et Lily, secourus par une de mes très bonnes amies
+								</figcaption>
+							</figure>
+						</div>
+						<div class="swiper-slide">
+							<figure>
+								<img src="assets/img/oreo.png" alt="chat">
+								<figcaption>
+									Oreo, tuxedo qui refuse d'accepter qu'il dépasse de son panier
+								</figcaption>
+							</figure>
+						</div>
+						<div class="swiper-slide">
+							<figure>
+								<img src="assets/img/mochii.png" alt="chat">
+								<figcaption>
+									Mochii, timide
+								</figcaption>
+							</figure>
+						</div>
+						<div class="swiper-slide">
+							<figure>
+								<img src="assets/img/maki.png" alt="chat">
+								<figcaption>
+									Maki, semi sauvage qui adore aller dehors
+								</figcaption>
+							</figure>
+						</div>
+						<div class="swiper-slide">
+							<figure>
+								<img src="assets/img/venus.png" alt="cat">
+								<figcaption>
+									Venus, qui aime bien partager les verres d'eau
+								</figcaption>
+							</figure>
+						</div>
+						<div class="swiper-slide">
+							<figure>
+								<img src="assets/img/baba.png" alt="placeholder">
+								<figcaption>
+									Babaganoush, qui aime bien partager les verres d'eau
+								</figcaption>
+							</figure>
+						</div>
+						<div class="swiper-slide">
+							<figure>
+								<img src="assets/img/velcro.png" alt="cat">
+								<figcaption>
+									Velcro, indigne de son nom car elle refuse les contacts
+								</figcaption>
+							</figure>
+						</div>
+						<div class="swiper-slide">
+							<figure>
+								<img src="assets/img/holly.png" alt="cat">
+								<figcaption>
+									Holly, big void
+								</figcaption>
+							</figure>
+						</div>
+						<div class="swiper-slide">
+							<figure>
+								<img src="assets/img/dustin.png" alt="cat">
+								<figcaption>
+									Dustin, dépendant affectif
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div id="pagination-pet-gallery" class="swiper-pagination"></div>
+				</g-allery>
+			</div>
+		</section>
+		<section id="lab_random">
+			<div class="ctn">
+				<h2>Info aléatoire <span>avec HTMX</span></h2>
+				<p>Note: l'exemple intialement plannifié avec HTMX s'est avéré techniquement challengeant car ce site est hébergé sur GitHub Pages</p>
+				<div class="content">
+					<button class="button button_large" hx-trigger="click" hx-swap="none" hx-on:click="getRandom()">
+						Surprend moi !
+					</button>
+					<div id="container-random"></div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<div id="globals">
+		<svg style="display: none;">
+			<defs>
+				<path id="linkedin"
+					d="M41.6 3.2H6.4C4.8 3.2 3.2 4.8 3.2 6.4v35.2c0 1.6 1.6 3.2 3.2 3.2h35.2c1.6 0 3.2-1.6 3.2-3.2V6.4c0-1.6-1.6-3.2-3.2-3.2zM13.5 41.6H6.9V20.2h6.6v21.4zm-3.3-24.3c-2.1 0-3.9-1.7-3.9-3.9s1.7-3.9 3.9-3.9 3.9 1.7 3.9 3.9-1.7 3.9-3.9 3.9zm28.2 24.3h-6.6V31.2c0-2.5-.1-5.7-3.5-5.7-3.5 0-4 2.7-4 5.5v10.6h-6.6V20.2h6.4v2.9h.1c.9-1.7 3.1-3.5 6.3-3.5 6.7 0 8 4.4 8 10.2v12.8z" />
+				<path id="github" fill-rule="evenodd" clip-rule="evenodd"
+					d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" />
+				<path id="arrow-forward"
+					d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+				</path>
+				<polygon id="external-link" fill-rule="evenodd"
+					points="9.586 5 5 5 5 3 13 3 13 11 11 11 11 6.414 4.707 12.707 3.293 11.293" />
+				<symbol id="construction" viewBox="0 0 24 24">
+					<path
+						d="M9.738,10.3a.516.516,0,0,0-.707,0L.768,18.56a2.483,2.483,0,0,0-.733,1.768,2.564,2.564,0,0,0,2.5,2.5A2.481,2.481,0,0,0,4.3,22.1l8.263-8.262a.5.5,0,0,0,0-.707Z" />
+					<path
+						d="M23.524,9.236l-1.06-1.061h0a1,1,0,0,0-1.413,0,1.022,1.022,0,0,1-1.414,0A1,1,0,0,1,19.413,7.1a1.5,1.5,0,0,0-.335-1.607C17.646,4.056,17.07,3.48,16.785,3.249l.007-.006A7.746,7.746,0,0,0,6.761,2.8a1,1,0,0,0-.348,1.138A1.013,1.013,0,0,0,7.4,4.6,5.014,5.014,0,0,1,11.15,6.055c.518.518.78.917.78,1.186a.41.41,0,0,1-.152.308L10.8,8.53a.5.5,0,0,0,0,.707l2.829,2.828a.5.5,0,0,0,.707,0L15.393,11a1.022,1.022,0,0,1,1.413,0,1,1,0,0,1,0,1.414,1,1,0,0,0,0,1.415l1.061,1.061a1.5,1.5,0,0,0,2.121,0l3.535-3.537a1.5,1.5,0,0,0,0-2.121Z" />
+				</symbol>
+				<symbol id="wave">
+					<g id="Layer_1-2" data-name="Layer 1">
+						<path
+							d="m0,132.22l1280-5.19V36.47l-124.58,20.97c-106.17,17.87-214.01,21.47-321.01,10.72l-41.3-4.15c-41.12-4.13-82.11-9.72-122.89-16.75l-168.3-29.02C387.74-1.44,271.67-5.22,156.59,7.01l-2.17.23C102.33,12.77,50.71,22.54,0,36.47h0" />
+					</g>
+				</symbol>
+			</defs>
+		</svg>
+	</div>
+</body>
+
+</html>

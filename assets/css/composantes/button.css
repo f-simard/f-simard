@@ -19,6 +19,12 @@
 	background-color: var(--primaire);
 }
 
+.button_large{
+	font-weight: 600;
+	font-size: 1.5rem;
+	padding: 1rem 2rem;
+}
+
 .button_small {
 	font-size: var(--font-short);
 	padding-block: var(--spacing-nano);
@@ -35,18 +41,6 @@
 	border-color: var(--accent);
 	background-color: var(--accent);
 	color: var(--darker);
-}
-
-.button_out-darker_bg-transparent{
-	border-color: var(--darker);
-	background-color: var(--transparent);
-	color: var(--darker);
-}
-
-.button_out-darker_bg-transparent:hover {
-	border-color: var(--contrast-dark);
-	background-color: var(--contrast-dark);
-	color: var(--light);
 }
 
 .button__group{
