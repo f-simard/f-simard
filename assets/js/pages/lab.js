@@ -27,7 +27,7 @@ window.getRandom = async function generateRandomEpisode() {
 	container.classList.remove("appear");
 	try {
 		// Fetch the JSON file
-		const response = await fetch("/assets/js/data/random.json");
+		const response = await fetch("/f-simard/assets/js/data/random.json");
 
 		// Check if response is ok
 		if (!response.ok) {
